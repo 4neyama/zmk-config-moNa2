@@ -1,59 +1,70 @@
-keys
-    //                    w    h     x    y   r  rx ry
-    // Left top row
-    = <&key_physical_attrs 100 100    0    0   0  0  0>
-    , <&key_physical_attrs 100 100  110    0   0  0  0>
-    , <&key_physical_attrs 100 100  220    0   0  0  0>
-    , <&key_physical_attrs 100 100  330    0   0  0  0>
-    , <&key_physical_attrs 100 100  440    0   0  0  0>
+#include <physical_layouts.dtsi>
 
-    // Right top row
-    , <&key_physical_attrs 100 100  940    0   0  0  0>
-    , <&key_physical_attrs 100 100 1050    0   0  0  0>
-    , <&key_physical_attrs 100 100 1160    0   0  0  0>
-    , <&key_physical_attrs 100 100 1270    0   0  0  0>
-    , <&key_physical_attrs 100 100 1380    0   0  0  0>
+/ {
+    physical_layout0: physical_layout0 {
+        compatible = "zmk,physical-layout";
+        display-name = "moNa2";
 
-    // Left home row
-    , <&key_physical_attrs 100 100    0  115   0  0  0>
-    , <&key_physical_attrs 100 100  110  115   0  0  0>
-    , <&key_physical_attrs 100 100  220  115   0  0  0>
-    , <&key_physical_attrs 100 100  330  115   0  0  0>
-    , <&key_physical_attrs 100 100  440  115   0  0  0>
+        transform = <&default_transform>;
+        kscan = <&kscan0>;
 
-    // Right home row (leading - key is offset left)
-    , <&key_physical_attrs 100 100  820  115   0  0  0>
-    , <&key_physical_attrs 100 100  940  115   0  0  0>
-    , <&key_physical_attrs 100 100 1050  115   0  0  0>
-    , <&key_physical_attrs 100 100 1160  115   0  0  0>
-    , <&key_physical_attrs 100 100 1270  115   0  0  0>
-    , <&key_physical_attrs 100 100 1380  115   0  0  0>
+        keys
+            // 左手 上段 5
+            = <&key_physical_attrs 100 100    0    0 0 0 0>
+            , <&key_physical_attrs 100 100  110    0 0 0 0>
+            , <&key_physical_attrs 100 100  220    0 0 0 0>
+            , <&key_physical_attrs 100 100  330    0 0 0 0>
+            , <&key_physical_attrs 100 100  440    0 0 0 0>
 
-    // Left bottom row (includes the extra layer-tap key at right)
-    , <&key_physical_attrs 100 100    0  230   0  0  0>
-    , <&key_physical_attrs 100 100  110  230   0  0  0>
-    , <&key_physical_attrs 100 100  220  230   0  0  0>
-    , <&key_physical_attrs 100 100  330  230   0  0  0>
-    , <&key_physical_attrs 100 100  440  230   0  0  0>
-    , <&key_physical_attrs 100 100  585  230   0  0  0>
+            // 右手 上段 5
+            , <&key_physical_attrs 100 100  980    0 0 0 0>
+            , <&key_physical_attrs 100 100 1090    0 0 0 0>
+            , <&key_physical_attrs 100 100 1200    0 0 0 0>
+            , <&key_physical_attrs 100 100 1310    0 0 0 0>
+            , <&key_physical_attrs 100 100 1420    0 0 0 0>
 
-    // Right bottom row (leading ; key is offset left)
-    , <&key_physical_attrs 100 100  820  230   0  0  0>
-    , <&key_physical_attrs 100 100  940  230   0  0  0>
-    , <&key_physical_attrs 100 100 1050  230   0  0  0>
-    , <&key_physical_attrs 100 100 1160  230   0  0  0>
-    , <&key_physical_attrs 100 100 1270  230   0  0  0>
-    , <&key_physical_attrs 100 100 1380  230   0  0  0>
+            // 左手 ホーム段 5
+            , <&key_physical_attrs 100 100    0  115 0 0 0>
+            , <&key_physical_attrs 100 100  110  115 0 0 0>
+            , <&key_physical_attrs 100 100  220  115 0 0 0>
+            , <&key_physical_attrs 100 100  330  115 0 0 0>
+            , <&key_physical_attrs 100 100  440  115 0 0 0>
 
-    // Left thumb cluster
-    , <&key_physical_attrs 100 100    0  380   0  0  0>
-    , <&key_physical_attrs 100 100  120  380   0  0  0>
-    , <&key_physical_attrs 100 100  240  380   0  0  0>
-    , <&key_physical_attrs 100 100  410  360   0  0  0>
-    , <&key_physical_attrs 100 100  530  360   0  0  0>
-    , <&key_physical_attrs 100 100  650  360   0  0  0>
+            // 右手 ホーム段 6（左端を少し前に）
+            , <&key_physical_attrs 100 100  850  115 0 0 0>
+            , <&key_physical_attrs 100 100  980  115 0 0 0>
+            , <&key_physical_attrs 100 100 1090  115 0 0 0>
+            , <&key_physical_attrs 100 100 1200  115 0 0 0>
+            , <&key_physical_attrs 100 100 1310  115 0 0 0>
+            , <&key_physical_attrs 100 100 1420  115 0 0 0>
 
-    // Right thumb cluster
-    , <&key_physical_attrs 100 100  820  380   0  0  0>
-    , <&key_physical_attrs 100 100  940  380   0  0  0>
-    , <&key_physical_attrs 100 100 1380  380   0  0  0>;
+            // 左手 下段 6
+            , <&key_physical_attrs 100 100    0  230 0 0 0>
+            , <&key_physical_attrs 100 100  110  230 0 0 0>
+            , <&key_physical_attrs 100 100  220  230 0 0 0>
+            , <&key_physical_attrs 100 100  330  230 0 0 0>
+            , <&key_physical_attrs 100 100  440  230 0 0 0>
+            , <&key_physical_attrs 100 100  585  230 0 0 0>
+
+            // 右手 下段 6（左端を少し前に）
+            , <&key_physical_attrs 100 100  850  230 0 0 0>
+            , <&key_physical_attrs 100 100  980  230 0 0 0>
+            , <&key_physical_attrs 100 100 1090  230 0 0 0>
+            , <&key_physical_attrs 100 100 1200  230 0 0 0>
+            , <&key_physical_attrs 100 100 1310  230 0 0 0>
+            , <&key_physical_attrs 100 100 1420  230 0 0 0>
+
+            // 左手 親指列 6
+            , <&key_physical_attrs 100 100    0  390 0 0 0>
+            , <&key_physical_attrs 100 100  110  390 0 0 0>
+            , <&key_physical_attrs 100 100  220  390 0 0 0>
+            , <&key_physical_attrs 100 100  350  390 0 0 0>
+            , <&key_physical_attrs 100 100  480  390 0 0 0>
+            , <&key_physical_attrs 100 100  610  390 0 0 0>
+
+            // 右手 親指列 3
+            , <&key_physical_attrs 100 100  850  390 0 0 0>
+            , <&key_physical_attrs 100 100  980  390 0 0 0>
+            , <&key_physical_attrs 100 100 1420  390 0 0 0>;
+    };
+};
