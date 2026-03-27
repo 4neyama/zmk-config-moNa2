@@ -67,4 +67,12 @@
     };
 };
 
+&mouse_runtime_input_processor {
+    temp-layer-enabled;
+    temp-layer = <5>;
+    temp-layer-activation-delay-ms = <80>;
+    temp-layer-deactivation-delay-ms = <180>;
+    active-layers = <0x00000001>; /* layer 0 だけで有効にしたいなら */
+};
+
 
