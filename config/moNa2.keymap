@@ -56,6 +56,12 @@
             ccw-binding = <&kp C_VOL_DN>;
         };
 
+        rsr_ui: rsr_ui {
+                compatible = "zmk,behavior-runtime-sensor-rotate";
+                #sensor-binding-cells = <0>;
+                cw-binding = <&trans>;
+                ccw-binding = <&trans>;
+        };
 
         lt_to_layer_0: lt_to_layer_0 {
             compatible = "zmk,behavior-hold-tap";
