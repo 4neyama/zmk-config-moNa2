@@ -26,6 +26,28 @@
     };
 
     behaviors {
+        hdpi: hdpi {
+            compatible = "zmk,behavior-runtime-input-processor-config";
+            #binding-cells = <0>;
+            config = <
+                &mouse_runtime_input_processor
+                RUNTIME_INPUT_PROCESSOR_SCALE_MULTIPLIER 3
+                RUNTIME_INPUT_PROCESSOR_SCALE_DIVISOR 2
+            >;
+            label = "HDPI";
+        };
+
+        ldpi: ldpi {
+            compatible = "zmk,behavior-runtime-input-processor-config";
+            #binding-cells = <0>;
+            config = <
+                &mouse_runtime_input_processor
+                RUNTIME_INPUT_PROCESSOR_SCALE_MULTIPLIER 1
+                RUNTIME_INPUT_PROCESSOR_SCALE_DIVISOR 2
+            >;
+            label = "LDPI";
+        };
+
         lt_to_layer_0: lt_to_layer_0 {
             compatible = "zmk,behavior-hold-tap";
             label = "LAYER_TAP_TO_0";
