@@ -56,6 +56,15 @@
             ccw-binding = <&kp C_VOL_DN>;
         };
 
+        behaviors {
+            rss_pointer: rss_pointer {
+                compatible = "zmk,behavior-runtime-sensor-scale";
+                #sensor-binding-cells = <0>;
+                sensor = <&trackball>;
+            };
+        };
+
+
         lt_to_layer_0: lt_to_layer_0 {
             compatible = "zmk,behavior-hold-tap";
             label = "LAYER_TAP_TO_0";
