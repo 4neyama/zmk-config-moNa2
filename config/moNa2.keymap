@@ -26,27 +26,8 @@
     };
 
     behaviors {
-        hdpi: hdpi {
-            compatible = "zmk,behavior-runtime-input-processor-config";
-            #binding-cells = <0>;
-            config = <
-                &mouse_runtime_input_processor
-                RUNTIME_INPUT_PROCESSOR_SCALE_MULTIPLIER 3
-                RUNTIME_INPUT_PROCESSOR_SCALE_DIVISOR 2
-            >;
-            label = "HDPI";
-        };
+        /* hdpi and ldpi are already defined in behaviors/runtime-input-processor.dtsi */
 
-        ldpi: ldpi {
-            compatible = "zmk,behavior-runtime-input-processor-config";
-            #binding-cells = <0>;
-            config = <
-                &mouse_runtime_input_processor
-                RUNTIME_INPUT_PROCESSOR_SCALE_MULTIPLIER 1
-                RUNTIME_INPUT_PROCESSOR_SCALE_DIVISOR 2
-            >;
-            label = "LDPI";
-        };
 
         rsr_vol: rsr_vol {
             compatible = "zmk,behavior-runtime-sensor-rotate";
