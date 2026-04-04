@@ -28,8 +28,5 @@ manifest:
     - name: zmk-rgbled-widget
       remote: caksoylar
       revision: v0.3-branch
-    - name: zmk-west-commands
-      remote: cormoran
-      revision: main
   self:
     path: config

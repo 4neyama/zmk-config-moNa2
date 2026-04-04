@@ -36,11 +36,24 @@ jobs:
       - name: West Zephyr Export
         run: west zephyr-export
 
-      - name: West ZMK Build
-        run: west zmk-build -d ./build -q
+      - name: Build Left Side
+        run: west build -s zmk/app -b seeeduino_xiao_ble --build-dir build/left -- -DSHIELD="moNa2_L rgbled_adapter" -DCONFIG_ZMK_STUDIO=y
+
+      - name: Build Right Side
+        run: west build -s zmk/app -b seeeduino_xiao_ble --build-dir build/right -- -DSHIELD="moNa2_R rgbled_adapter" -DCONFIG_ZMK_STUDIO=y
+
+      - name: Build Settings Reset
+        run: west build -s zmk/app -b seeeduino_xiao_ble --build-dir build/reset -- -DSHIELD=settings_reset
+
+      - name: Rename and Prepare Artifacts
+        run: |
+          mkdir artifacts
+          cp build/left/zephyr/zmk.uf2 artifacts/moNa2_L.uf2
+          cp build/right/zephyr/zmk.uf2 artifacts/moNa2_R.uf2
+          cp build/reset/zephyr/zmk.uf2 artifacts/settings_reset.uf2
 
       - name: Archive artifacts
         uses: actions/upload-artifact@v4
         with:
-          name: firmware
-          path: build/zephyr/zmk.uf2
+          name: MoNa2_Firmware
+          path: artifacts/*.uf2
