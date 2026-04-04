@@ -16,6 +16,9 @@ manifest:
     - name: zmk-module-runtime-input-processor
       remote: cormoran
       revision: main
+    - name: zmk-studio-messages
+      remote: cormoran
+      revision: custom-studio-protocol
     - name: zmk-module-settings-rpc
       remote: cormoran
       revision: main
