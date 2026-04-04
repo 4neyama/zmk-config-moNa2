@@ -15,3 +15,13 @@
 &left_encoder {
     status = "okay";
 };
+
+/* Dummy nodes to resolve label references on the peripheral side */
+/ {
+    mouse_runtime_input_processor: mouse_runtime_input_processor {
+        #input-processor-cells = <0>;
+    };
+    scroll_runtime_input_processor: scroll_runtime_input_processor {
+        #input-processor-cells = <0>;
+    };
+};
