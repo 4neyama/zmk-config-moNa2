@@ -67,7 +67,7 @@
     };
 };
 
-#if DT_NODE_HAS_STATUS(DT_NODELABEL(trackball), okay)
+#if IS_ENABLED(CONFIG_ZMK_RUNTIME_INPUT_PROCESSOR)
 &mkp_input_listener {
     input-processors = <&mouse_runtime_input_processor>;
 };
