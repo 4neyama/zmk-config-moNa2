@@ -127,8 +127,3 @@
         };
     };
 };
-<<<<<<< HEAD
-=======
-
-&mkp_input_listener { input-processors = <&mouse_runtime_input_processor>; };
->>>>>>> 50861605815aebb8cc9653ca84a77416cae3b2af
