@@ -1,0 +1,15 @@
+﻿2026-04-04T12:32:04.0841021Z ##[group]Run if [ "/tmp/zmk-config" != "${GITHUB_WORKSPACE}" ]; then
+2026-04-04T12:32:04.0841516Z [36;1mif [ "/tmp/zmk-config" != "${GITHUB_WORKSPACE}" ]; then[0m
+2026-04-04T12:32:04.0841865Z [36;1m  mkdir "/tmp/zmk-config/config"[0m
+2026-04-04T12:32:04.0842164Z [36;1m  cp -R config/* "/tmp/zmk-config/config/"[0m
+2026-04-04T12:32:04.0842435Z [36;1mfi[0m
+2026-04-04T12:32:04.0842693Z shell: sh -e {0}
+2026-04-04T12:32:04.0842871Z env:
+2026-04-04T12:32:04.0843042Z   build_dir: /tmp/tmp.mfYTQzOaHL
+2026-04-04T12:32:04.0843278Z   base_dir: /tmp/zmk-config
+2026-04-04T12:32:04.0843485Z   zephyr_version: 4.1.0
+2026-04-04T12:32:04.0843675Z   extra_west_args: 
+2026-04-04T12:32:04.0844082Z   extra_cmake_args: -DSHIELD="settings_reset" -DZMK_EXTRA_MODULES='/__w/zmk-config-moNa2/zmk-config-moNa2'
+2026-04-04T12:32:04.0844581Z   display_name: settings_reset - seeeduino_xiao_ble
+2026-04-04T12:32:04.0844909Z   artifact_name: settings_reset-seeeduino_xiao_ble-zmk
+2026-04-04T12:32:04.0845194Z ##[endgroup]

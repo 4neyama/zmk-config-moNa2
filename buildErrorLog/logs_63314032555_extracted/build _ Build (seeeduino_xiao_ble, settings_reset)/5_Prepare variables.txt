@@ -1,0 +1,38 @@
+﻿2026-04-04T12:32:04.0212974Z ##[group]Run if [ -e zephyr/module.yml ]; then
+2026-04-04T12:32:04.0213357Z [36;1mif [ -e zephyr/module.yml ]; then[0m
+2026-04-04T12:32:04.0213731Z [36;1m  export zmk_load_arg=" -DZMK_EXTRA_MODULES='${GITHUB_WORKSPACE}'"[0m
+2026-04-04T12:32:04.0214133Z [36;1m  new_tmp_dir="${TMPDIR:-/tmp}/zmk-config"[0m
+2026-04-04T12:32:04.0214418Z [36;1m  mkdir -p "${new_tmp_dir}"[0m
+2026-04-04T12:32:04.0214702Z [36;1m  echo "base_dir=${new_tmp_dir}" >> $GITHUB_ENV[0m
+2026-04-04T12:32:04.0214973Z [36;1melse[0m
+2026-04-04T12:32:04.0215213Z [36;1m  echo "base_dir=${GITHUB_WORKSPACE}" >> $GITHUB_ENV[0m
+2026-04-04T12:32:04.0215510Z [36;1mfi[0m
+2026-04-04T12:32:04.0215667Z [36;1m[0m
+2026-04-04T12:32:04.0215842Z [36;1mif [ -n "${snippet}" ]; then[0m
+2026-04-04T12:32:04.0216099Z [36;1m  extra_west_args="-S \"${snippet}\""[0m
+2026-04-04T12:32:04.0216347Z [36;1mfi[0m
+2026-04-04T12:32:04.0216497Z [36;1m[0m
+2026-04-04T12:32:04.0216730Z [36;1mecho "zephyr_version=${ZEPHYR_VERSION}" >> $GITHUB_ENV[0m
+2026-04-04T12:32:04.0217141Z [36;1mecho "extra_west_args=${extra_west_args}" >> $GITHUB_ENV[0m
+2026-04-04T12:32:04.0217615Z [36;1mecho "extra_cmake_args=${shield:+-DSHIELD=\"$shield\"}${zmk_load_arg}" >> $GITHUB_ENV[0m
+2026-04-04T12:32:04.0218125Z [36;1mecho "display_name=${shield:+$shield - }${board}" >> $GITHUB_ENV[0m
+2026-04-04T12:32:04.0218612Z [36;1mecho "artifact_name=${artifact_name:-${shield:+$shield-}${board}-zmk}" >> $GITHUB_ENV[0m
+2026-04-04T12:32:04.0220589Z shell: sh -x {0}
+2026-04-04T12:32:04.0220875Z env:
+2026-04-04T12:32:04.0221057Z   build_dir: /tmp/tmp.mfYTQzOaHL
+2026-04-04T12:32:04.0221303Z   board: seeeduino_xiao_ble
+2026-04-04T12:32:04.0221510Z   shield: settings_reset
+2026-04-04T12:32:04.0221701Z   artifact_name: 
+2026-04-04T12:32:04.0221884Z   snippet: 
+2026-04-04T12:32:04.0222043Z ##[endgroup]
+2026-04-04T12:32:04.0751008Z + [ -e zephyr/module.yml ]
+2026-04-04T12:32:04.0754815Z + export zmk_load_arg= -DZMK_EXTRA_MODULES='/__w/zmk-config-moNa2/zmk-config-moNa2'
+2026-04-04T12:32:04.0757588Z + new_tmp_dir=/tmp/zmk-config
+2026-04-04T12:32:04.0759067Z + mkdir -p /tmp/zmk-config
+2026-04-04T12:32:04.0762728Z + echo base_dir=/tmp/zmk-config
+2026-04-04T12:32:04.0764661Z + [ -n  ]
+2026-04-04T12:32:04.0764866Z + echo zephyr_version=4.1.0
+2026-04-04T12:32:04.0765249Z + echo extra_west_args=
+2026-04-04T12:32:04.0766076Z + echo extra_cmake_args=-DSHIELD="settings_reset" -DZMK_EXTRA_MODULES='/__w/zmk-config-moNa2/zmk-config-moNa2'
+2026-04-04T12:32:04.0767041Z + echo display_name=settings_reset - seeeduino_xiao_ble
+2026-04-04T12:32:04.0767634Z + echo artifact_name=settings_reset-seeeduino_xiao_ble-zmk

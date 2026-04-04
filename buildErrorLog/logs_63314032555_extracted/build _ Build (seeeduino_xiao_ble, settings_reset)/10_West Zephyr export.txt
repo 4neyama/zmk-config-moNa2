@@ -1,0 +1,20 @@
+﻿2026-04-04T12:32:48.0619668Z ##[group]Run west zephyr-export
+2026-04-04T12:32:48.0620678Z [36;1mwest zephyr-export[0m
+2026-04-04T12:32:48.0621394Z shell: sh -e {0}
+2026-04-04T12:32:48.0621716Z env:
+2026-04-04T12:32:48.0622030Z   build_dir: /tmp/tmp.mfYTQzOaHL
+2026-04-04T12:32:48.0622450Z   base_dir: /tmp/zmk-config
+2026-04-04T12:32:48.0622833Z   zephyr_version: 4.1.0
+2026-04-04T12:32:48.0623183Z   extra_west_args: 
+2026-04-04T12:32:48.0623902Z   extra_cmake_args: -DSHIELD="settings_reset" -DZMK_EXTRA_MODULES='/__w/zmk-config-moNa2/zmk-config-moNa2'
+2026-04-04T12:32:48.0624791Z   display_name: settings_reset - seeeduino_xiao_ble
+2026-04-04T12:32:48.0625367Z   artifact_name: settings_reset-seeeduino_xiao_ble-zmk
+2026-04-04T12:32:48.0625884Z ##[endgroup]
+2026-04-04T12:32:48.5959852Z Zephyr (/tmp/zmk-config/zephyr/share/zephyr-package/cmake)
+2026-04-04T12:32:48.5960731Z has been added to the user package registry in:
+2026-04-04T12:32:48.5961202Z ~/.cmake/packages/Zephyr
+2026-04-04T12:32:48.5961417Z 
+2026-04-04T12:32:48.8650399Z ZephyrUnittest (/tmp/zmk-config/zephyr/share/zephyrunittest-package/cmake)
+2026-04-04T12:32:48.8651083Z has been added to the user package registry in:
+2026-04-04T12:32:48.8651396Z ~/.cmake/packages/ZephyrUnittest
+2026-04-04T12:32:48.8651567Z 

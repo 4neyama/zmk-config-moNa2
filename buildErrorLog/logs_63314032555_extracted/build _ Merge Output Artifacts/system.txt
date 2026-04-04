@@ -1,0 +1,6 @@
+2026-04-04T12:33:22.3930000Z Evaluating build.if
+2026-04-04T12:33:22.3930000Z Evaluating: success()
+2026-04-04T12:33:22.3930000Z Result: true
+2026-04-04T12:33:22.3930000Z Evaluating build.merge.if
+2026-04-04T12:33:22.3930000Z Evaluating: success()
+2026-04-04T12:33:22.3930000Z Result: false

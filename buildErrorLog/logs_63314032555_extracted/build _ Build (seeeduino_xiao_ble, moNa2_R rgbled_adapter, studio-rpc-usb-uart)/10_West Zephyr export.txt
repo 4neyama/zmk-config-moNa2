@@ -1,0 +1,20 @@
+﻿2026-04-04T12:32:40.5917636Z ##[group]Run west zephyr-export
+2026-04-04T12:32:40.5918181Z [36;1mwest zephyr-export[0m
+2026-04-04T12:32:40.5918703Z shell: sh -e {0}
+2026-04-04T12:32:40.5919020Z env:
+2026-04-04T12:32:40.5919336Z   build_dir: /tmp/tmp.9SjUl0Zvhh
+2026-04-04T12:32:40.5919808Z   base_dir: /tmp/zmk-config
+2026-04-04T12:32:40.5920193Z   zephyr_version: 4.1.0
+2026-04-04T12:32:40.5920601Z   extra_west_args: -S "studio-rpc-usb-uart"
+2026-04-04T12:32:40.5921534Z   extra_cmake_args: -DSHIELD="moNa2_R rgbled_adapter" -DZMK_EXTRA_MODULES='/__w/zmk-config-moNa2/zmk-config-moNa2'
+2026-04-04T12:32:40.5922576Z   display_name: moNa2_R rgbled_adapter - seeeduino_xiao_ble
+2026-04-04T12:32:40.5923267Z   artifact_name: moNa2_R rgbled_adapter-seeeduino_xiao_ble-zmk
+2026-04-04T12:32:40.5923843Z ##[endgroup]
+2026-04-04T12:32:41.1226405Z Zephyr (/tmp/zmk-config/zephyr/share/zephyr-package/cmake)
+2026-04-04T12:32:41.1226975Z has been added to the user package registry in:
+2026-04-04T12:32:41.1227464Z ~/.cmake/packages/Zephyr
+2026-04-04T12:32:41.1227792Z 
+2026-04-04T12:32:41.3935540Z ZephyrUnittest (/tmp/zmk-config/zephyr/share/zephyrunittest-package/cmake)
+2026-04-04T12:32:41.3936296Z has been added to the user package registry in:
+2026-04-04T12:32:41.3936749Z ~/.cmake/packages/ZephyrUnittest
+2026-04-04T12:32:41.3937002Z 

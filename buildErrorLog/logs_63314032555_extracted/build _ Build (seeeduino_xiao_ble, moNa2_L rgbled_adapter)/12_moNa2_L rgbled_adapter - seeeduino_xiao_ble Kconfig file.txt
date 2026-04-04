@@ -1,0 +1,18 @@
+﻿2026-04-04T12:32:39.8401889Z ##[group]Run if [ -f "/tmp/tmp.11ueOr35xV/zephyr/.config" ]
+2026-04-04T12:32:39.8402313Z [36;1mif [ -f "/tmp/tmp.11ueOr35xV/zephyr/.config" ][0m
+2026-04-04T12:32:39.8402598Z [36;1mthen[0m
+2026-04-04T12:32:39.8402868Z [36;1m  grep -v -e "^#" -e "^$" "/tmp/tmp.11ueOr35xV/zephyr/.config" | sort[0m
+2026-04-04T12:32:39.8403186Z [36;1melse[0m
+2026-04-04T12:32:39.8403372Z [36;1m  echo "No Kconfig output"[0m
+2026-04-04T12:32:39.8403601Z [36;1mfi[0m
+2026-04-04T12:32:39.8403835Z shell: sh -e {0}
+2026-04-04T12:32:39.8404009Z env:
+2026-04-04T12:32:39.8404187Z   build_dir: /tmp/tmp.11ueOr35xV
+2026-04-04T12:32:39.8404423Z   base_dir: /tmp/zmk-config
+2026-04-04T12:32:39.8404633Z   zephyr_version: 4.1.0
+2026-04-04T12:32:39.8404833Z   extra_west_args: 
+2026-04-04T12:32:39.8405444Z   extra_cmake_args: -DSHIELD="moNa2_L rgbled_adapter" -DZMK_EXTRA_MODULES='/__w/zmk-config-moNa2/zmk-config-moNa2'
+2026-04-04T12:32:39.8405987Z   display_name: moNa2_L rgbled_adapter - seeeduino_xiao_ble
+2026-04-04T12:32:39.8406363Z   artifact_name: moNa2_L rgbled_adapter-seeeduino_xiao_ble-zmk
+2026-04-04T12:32:39.8406696Z ##[endgroup]
+2026-04-04T12:32:39.8892068Z No Kconfig output

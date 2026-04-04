@@ -1,0 +1,70 @@
+﻿2026-04-04T12:32:01.0643211Z ##[group]Run actions/checkout@v4
+2026-04-04T12:32:01.0643798Z with:
+2026-04-04T12:32:01.0644232Z   repository: 4neyama/zmk-config-moNa2
+2026-04-04T12:32:01.0644663Z   token: ***
+2026-04-04T12:32:01.0644854Z   ssh-strict: true
+2026-04-04T12:32:01.0645037Z   ssh-user: git
+2026-04-04T12:32:01.0645236Z   persist-credentials: true
+2026-04-04T12:32:01.0645445Z   clean: true
+2026-04-04T12:32:01.0645635Z   sparse-checkout-cone-mode: true
+2026-04-04T12:32:01.0646103Z   fetch-depth: 1
+2026-04-04T12:32:01.0646283Z   fetch-tags: false
+2026-04-04T12:32:01.0646463Z   show-progress: true
+2026-04-04T12:32:01.0646658Z   lfs: false
+2026-04-04T12:32:01.0646818Z   submodules: false
+2026-04-04T12:32:01.0647003Z   set-safe-directory: true
+2026-04-04T12:32:01.0647498Z ##[endgroup]
+2026-04-04T12:32:01.0707648Z ##[command]/usr/bin/docker exec  f02578ec05c63a41db269bf1c279c09b7bad2c5291ed2e1dd38615d3464601ed sh -c "cat /etc/*release | grep ^ID"
+2026-04-04T12:32:01.2693615Z Syncing repository: 4neyama/zmk-config-moNa2
+2026-04-04T12:32:01.2695547Z ##[group]Getting Git version info
+2026-04-04T12:32:01.2695966Z Working directory is '/__w/zmk-config-moNa2/zmk-config-moNa2'
+2026-04-04T12:32:01.2765137Z [command]/usr/bin/git version
+2026-04-04T12:32:01.2765612Z git version 2.43.0
+2026-04-04T12:32:01.2767134Z ##[endgroup]
+2026-04-04T12:32:01.2772899Z Temporarily overriding HOME='/__w/_temp/bef1ced2-b949-4032-b9c5-211d5fda67ad' before making global git config changes
+2026-04-04T12:32:01.2773771Z Adding repository directory to the temporary git global config as a safe directory
+2026-04-04T12:32:01.2775155Z [command]/usr/bin/git config --global --add safe.directory /__w/zmk-config-moNa2/zmk-config-moNa2
+2026-04-04T12:32:01.2776633Z Deleting the contents of '/__w/zmk-config-moNa2/zmk-config-moNa2'
+2026-04-04T12:32:01.2787624Z ##[group]Initializing the repository
+2026-04-04T12:32:01.2791426Z [command]/usr/bin/git init /__w/zmk-config-moNa2/zmk-config-moNa2
+2026-04-04T12:32:01.2823120Z hint: Using 'master' as the name for the initial branch. This default branch name
+2026-04-04T12:32:01.2824457Z hint: is subject to change. To configure the initial branch name to use in all
+2026-04-04T12:32:01.2825378Z hint: of your new repositories, which will suppress this warning, call:
+2026-04-04T12:32:01.2826033Z hint: 
+2026-04-04T12:32:01.2826483Z hint: 	git config --global init.defaultBranch <name>
+2026-04-04T12:32:01.2827026Z hint: 
+2026-04-04T12:32:01.2827532Z hint: Names commonly chosen instead of 'master' are 'main', 'trunk' and
+2026-04-04T12:32:01.2828493Z hint: 'development'. The just-created branch can be renamed via this command:
+2026-04-04T12:32:01.2829176Z hint: 
+2026-04-04T12:32:01.2829484Z hint: 	git branch -m <name>
+2026-04-04T12:32:01.2830968Z Initialized empty Git repository in /__w/zmk-config-moNa2/zmk-config-moNa2/.git/
+2026-04-04T12:32:01.2842533Z [command]/usr/bin/git remote add origin https://github.com/4neyama/zmk-config-moNa2
+2026-04-04T12:32:01.2870136Z ##[endgroup]
+2026-04-04T12:32:01.2870537Z ##[group]Disabling automatic garbage collection
+2026-04-04T12:32:01.2875017Z [command]/usr/bin/git config --local gc.auto 0
+2026-04-04T12:32:01.2901153Z ##[endgroup]
+2026-04-04T12:32:01.2901689Z ##[group]Setting up auth
+2026-04-04T12:32:01.2907926Z [command]/usr/bin/git config --local --name-only --get-regexp core\.sshCommand
+2026-04-04T12:32:01.2934464Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'core\.sshCommand' && git config --local --unset-all 'core.sshCommand' || :"
+2026-04-04T12:32:01.3148166Z [command]/usr/bin/git config --local --name-only --get-regexp http\.https\:\/\/github\.com\/\.extraheader
+2026-04-04T12:32:01.3174220Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'http\.https\:\/\/github\.com\/\.extraheader' && git config --local --unset-all 'http.https://github.com/.extraheader' || :"
+2026-04-04T12:32:01.3389537Z [command]/usr/bin/git config --local --name-only --get-regexp ^includeIf\.gitdir:
+2026-04-04T12:32:01.3418615Z [command]/usr/bin/git submodule foreach --recursive git config --local --show-origin --name-only --get-regexp remote.origin.url
+2026-04-04T12:32:01.3632800Z [command]/usr/bin/git config --local http.https://github.com/.extraheader AUTHORIZATION: basic ***
+2026-04-04T12:32:01.3664754Z ##[endgroup]
+2026-04-04T12:32:01.3665485Z ##[group]Fetching the repository
+2026-04-04T12:32:01.3673633Z [command]/usr/bin/git -c protocol.version=2 fetch --no-tags --prune --no-recurse-submodules --depth=1 origin +50861605815aebb8cc9653ca84a77416cae3b2af:refs/remotes/origin/test/DYA-Studio
+2026-04-04T12:32:02.5200647Z From https://github.com/4neyama/zmk-config-moNa2
+2026-04-04T12:32:02.5201648Z  * [new ref]         50861605815aebb8cc9653ca84a77416cae3b2af -> origin/test/DYA-Studio
+2026-04-04T12:32:02.5221065Z ##[endgroup]
+2026-04-04T12:32:02.5221702Z ##[group]Determining the checkout info
+2026-04-04T12:32:02.5223525Z ##[endgroup]
+2026-04-04T12:32:02.5228716Z [command]/usr/bin/git sparse-checkout disable
+2026-04-04T12:32:02.5262900Z [command]/usr/bin/git config --local --unset-all extensions.worktreeConfig
+2026-04-04T12:32:02.5287490Z ##[group]Checking out the ref
+2026-04-04T12:32:02.5298682Z [command]/usr/bin/git checkout --progress --force -B test/DYA-Studio refs/remotes/origin/test/DYA-Studio
+2026-04-04T12:32:02.6471320Z Switched to a new branch 'test/DYA-Studio'
+2026-04-04T12:32:02.6473888Z branch 'test/DYA-Studio' set up to track 'origin/test/DYA-Studio'.
+2026-04-04T12:32:02.6478766Z ##[endgroup]
+2026-04-04T12:32:02.6517316Z [command]/usr/bin/git log -1 --format=%H
+2026-04-04T12:32:02.6541616Z 50861605815aebb8cc9653ca84a77416cae3b2af

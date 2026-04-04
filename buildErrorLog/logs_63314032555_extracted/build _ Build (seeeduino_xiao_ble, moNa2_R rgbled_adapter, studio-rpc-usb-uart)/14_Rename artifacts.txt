@@ -1,0 +1,22 @@
+﻿2026-04-04T12:33:16.9320608Z ##[group]Run mkdir "/tmp/tmp.9SjUl0Zvhh/artifacts"
+2026-04-04T12:33:16.9320779Z [36;1mmkdir "/tmp/tmp.9SjUl0Zvhh/artifacts"[0m
+2026-04-04T12:33:16.9320912Z [36;1mif [ -f "/tmp/tmp.9SjUl0Zvhh/zephyr/zmk.uf2" ][0m
+2026-04-04T12:33:16.9320984Z [36;1mthen[0m
+2026-04-04T12:33:16.9321380Z [36;1m  cp "/tmp/tmp.9SjUl0Zvhh/zephyr/zmk.uf2" "/tmp/tmp.9SjUl0Zvhh/artifacts/moNa2_R rgbled_adapter-seeeduino_xiao_ble-zmk.uf2"[0m
+2026-04-04T12:33:16.9321534Z [36;1melif [ -f "/tmp/tmp.9SjUl0Zvhh/zephyr/zmk.bin" ][0m
+2026-04-04T12:33:16.9321607Z [36;1mthen[0m
+2026-04-04T12:33:16.9321991Z [36;1m  cp "/tmp/tmp.9SjUl0Zvhh/zephyr/zmk.bin" "/tmp/tmp.9SjUl0Zvhh/artifacts/moNa2_R rgbled_adapter-seeeduino_xiao_ble-zmk.bin"[0m
+2026-04-04T12:33:16.9322060Z [36;1mfi[0m
+2026-04-04T12:33:16.9322235Z shell: sh -x {0}
+2026-04-04T12:33:16.9322298Z env:
+2026-04-04T12:33:16.9322395Z   build_dir: /tmp/tmp.9SjUl0Zvhh
+2026-04-04T12:33:16.9322474Z   base_dir: /tmp/zmk-config
+2026-04-04T12:33:16.9322548Z   zephyr_version: 4.1.0
+2026-04-04T12:33:16.9322682Z   extra_west_args: -S "studio-rpc-usb-uart"
+2026-04-04T12:33:16.9323006Z   extra_cmake_args: -DSHIELD="moNa2_R rgbled_adapter" -DZMK_EXTRA_MODULES='/__w/zmk-config-moNa2/zmk-config-moNa2'
+2026-04-04T12:33:16.9323150Z   display_name: moNa2_R rgbled_adapter - seeeduino_xiao_ble
+2026-04-04T12:33:16.9323301Z   artifact_name: moNa2_R rgbled_adapter-seeeduino_xiao_ble-zmk
+2026-04-04T12:33:16.9323519Z ##[endgroup]
+2026-04-04T12:33:16.9832135Z + mkdir /tmp/tmp.9SjUl0Zvhh/artifacts
+2026-04-04T12:33:16.9838326Z + [ -f /tmp/tmp.9SjUl0Zvhh/zephyr/zmk.uf2 ]
+2026-04-04T12:33:16.9838802Z + cp /tmp/tmp.9SjUl0Zvhh/zephyr/zmk.uf2 /tmp/tmp.9SjUl0Zvhh/artifacts/moNa2_R rgbled_adapter-seeeduino_xiao_ble-zmk.uf2

@@ -1,0 +1,29 @@
+﻿2026-04-04T12:33:16.9916173Z ##[group]Run actions/upload-artifact@v4
+2026-04-04T12:33:16.9916257Z with:
+2026-04-04T12:33:16.9916429Z   name: artifact-moNa2_R rgbled_adapter-seeeduino_xiao_ble-zmk
+2026-04-04T12:33:16.9916524Z   path: /tmp/tmp.9SjUl0Zvhh/artifacts
+2026-04-04T12:33:16.9916605Z   if-no-files-found: warn
+2026-04-04T12:33:16.9916688Z   compression-level: 6
+2026-04-04T12:33:16.9916757Z   overwrite: false
+2026-04-04T12:33:16.9916841Z   include-hidden-files: false
+2026-04-04T12:33:16.9916913Z env:
+2026-04-04T12:33:16.9916996Z   build_dir: /tmp/tmp.9SjUl0Zvhh
+2026-04-04T12:33:16.9917077Z   base_dir: /tmp/zmk-config
+2026-04-04T12:33:16.9917158Z   zephyr_version: 4.1.0
+2026-04-04T12:33:16.9917275Z   extra_west_args: -S "studio-rpc-usb-uart"
+2026-04-04T12:33:16.9917603Z   extra_cmake_args: -DSHIELD="moNa2_R rgbled_adapter" -DZMK_EXTRA_MODULES='/__w/zmk-config-moNa2/zmk-config-moNa2'
+2026-04-04T12:33:16.9917742Z   display_name: moNa2_R rgbled_adapter - seeeduino_xiao_ble
+2026-04-04T12:33:16.9917888Z   artifact_name: moNa2_R rgbled_adapter-seeeduino_xiao_ble-zmk
+2026-04-04T12:33:16.9917984Z ##[endgroup]
+2026-04-04T12:33:16.9934259Z ##[command]/usr/bin/docker exec  f02578ec05c63a41db269bf1c279c09b7bad2c5291ed2e1dd38615d3464601ed sh -c "cat /etc/*release | grep ^ID"
+2026-04-04T12:33:17.2981727Z With the provided path, there will be 1 file uploaded
+2026-04-04T12:33:17.2987374Z Artifact name is valid!
+2026-04-04T12:33:17.2988341Z Root directory input is valid!
+2026-04-04T12:33:17.3960558Z Beginning upload of artifact content to blob storage
+2026-04-04T12:33:17.5089311Z Uploaded bytes 213078
+2026-04-04T12:33:17.5287438Z Finished uploading artifact content to blob storage!
+2026-04-04T12:33:17.5291197Z SHA256 digest of uploaded artifact zip is 5d74c6918a51abbeb7cd06196ef0be500bdc135fda1a325e4bc2c1a203ac9cab
+2026-04-04T12:33:17.5293454Z Finalizing artifact upload
+2026-04-04T12:33:17.6089868Z Artifact artifact-moNa2_R rgbled_adapter-seeeduino_xiao_ble-zmk.zip successfully finalized. Artifact ID 6270801640
+2026-04-04T12:33:17.6091289Z Artifact artifact-moNa2_R rgbled_adapter-seeeduino_xiao_ble-zmk has been successfully uploaded! Final size is 213078 bytes. Artifact ID is 6270801640
+2026-04-04T12:33:17.6098275Z Artifact download URL: https://github.com/4neyama/zmk-config-moNa2/actions/runs/23978942665/artifacts/6270801640

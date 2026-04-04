@@ -1,0 +1,46 @@
+﻿2026-04-04T12:32:04.2348332Z ##[group]Run actions/cache@v4
+2026-04-04T12:32:04.2348609Z with:
+2026-04-04T12:32:04.2349089Z   path: /tmp/zmk-config/modules/
+/tmp/zmk-config/tools/
+/tmp/zmk-config/zephyr/
+/tmp/zmk-config/bootloader/
+/tmp/zmk-config/zmk/
+
+2026-04-04T12:32:04.2349944Z   key: Linux-build-cache-zephyr-4.1.0-modules-aab120057f90b221a32daba8afdacc6ef10966d2fdb2205b59910d410e0c164f
+2026-04-04T12:32:04.2351112Z   restore-keys: Linux-build-cache-zephyr-4.1.0-modules-
+Linux-build-
+Linux-
+
+2026-04-04T12:32:04.2351510Z   enableCrossOsArchive: false
+2026-04-04T12:32:04.2351739Z   fail-on-cache-miss: false
+2026-04-04T12:32:04.2351951Z   lookup-only: false
+2026-04-04T12:32:04.2352132Z   save-always: false
+2026-04-04T12:32:04.2352309Z env:
+2026-04-04T12:32:04.2352487Z   build_dir: /tmp/tmp.mfYTQzOaHL
+2026-04-04T12:32:04.2352720Z   base_dir: /tmp/zmk-config
+2026-04-04T12:32:04.2352929Z   zephyr_version: 4.1.0
+2026-04-04T12:32:04.2353118Z   extra_west_args: 
+2026-04-04T12:32:04.2353526Z   extra_cmake_args: -DSHIELD="settings_reset" -DZMK_EXTRA_MODULES='/__w/zmk-config-moNa2/zmk-config-moNa2'
+2026-04-04T12:32:04.2354092Z   display_name: settings_reset - seeeduino_xiao_ble
+2026-04-04T12:32:04.2354422Z   artifact_name: settings_reset-seeeduino_xiao_ble-zmk
+2026-04-04T12:32:04.2354721Z   cache_name: cache-zephyr-4.1.0-modules
+2026-04-04T12:32:04.2354966Z ##[endgroup]
+2026-04-04T12:32:04.2359428Z ##[command]/usr/bin/docker exec  948140d1557a2f6cd4ed9730de6ec0332f46b14a57e421851327a24a2e7f45e2 sh -c "cat /etc/*release | grep ^ID"
+2026-04-04T12:32:04.5954975Z Cache hit for: Linux-build-cache-zephyr-4.1.0-modules-aab120057f90b221a32daba8afdacc6ef10966d2fdb2205b59910d410e0c164f
+2026-04-04T12:32:05.7717671Z Received 62914560 of 2117963767 (3.0%), 60.0 MBs/sec
+2026-04-04T12:32:06.7728498Z Received 264241152 of 2117963767 (12.5%), 125.9 MBs/sec
+2026-04-04T12:32:07.7772921Z Received 406847488 of 2117963767 (19.2%), 129.1 MBs/sec
+2026-04-04T12:32:08.7770406Z Received 641728512 of 2117963767 (30.3%), 152.8 MBs/sec
+2026-04-04T12:32:09.7793210Z Received 851443712 of 2117963767 (40.2%), 162.2 MBs/sec
+2026-04-04T12:32:10.7788965Z Received 1006632960 of 2117963767 (47.5%), 159.8 MBs/sec
+2026-04-04T12:32:11.7814205Z Received 1103101952 of 2117963767 (52.1%), 150.1 MBs/sec
+2026-04-04T12:32:12.7827915Z Received 1308622848 of 2117963767 (61.8%), 155.8 MBs/sec
+2026-04-04T12:32:13.7836419Z Received 1501560832 of 2117963767 (70.9%), 158.9 MBs/sec
+2026-04-04T12:32:14.7872233Z Received 1702887424 of 2117963767 (80.4%), 162.2 MBs/sec
+2026-04-04T12:32:15.7894499Z Received 1879048192 of 2117963767 (88.7%), 162.7 MBs/sec
+2026-04-04T12:32:16.7931174Z Received 2084569088 of 2117963767 (98.4%), 165.4 MBs/sec
+2026-04-04T12:32:16.9451596Z Received 2117963767 of 2117963767 (100.0%), 165.9 MBs/sec
+2026-04-04T12:32:16.9455216Z Cache Size: ~2020 MB (2117963767 B)
+2026-04-04T12:32:16.9556279Z [command]/usr/bin/tar -xf /__w/_temp/9c6c225a-e898-4e59-bf5a-1076cb47b36b/cache.tgz -P -C /__w/zmk-config-moNa2/zmk-config-moNa2 -z
+2026-04-04T12:32:38.1181157Z Cache restored successfully
+2026-04-04T12:32:38.2155976Z Cache restored from key: Linux-build-cache-zephyr-4.1.0-modules-aab120057f90b221a32daba8afdacc6ef10966d2fdb2205b59910d410e0c164f

@@ -1,0 +1,15 @@
+﻿2026-04-04T12:31:59.5671741Z ##[group]Run if [ "/tmp/zmk-config" != "${GITHUB_WORKSPACE}" ]; then
+2026-04-04T12:31:59.5672194Z [36;1mif [ "/tmp/zmk-config" != "${GITHUB_WORKSPACE}" ]; then[0m
+2026-04-04T12:31:59.5672521Z [36;1m  mkdir "/tmp/zmk-config/config"[0m
+2026-04-04T12:31:59.5672810Z [36;1m  cp -R config/* "/tmp/zmk-config/config/"[0m
+2026-04-04T12:31:59.5673072Z [36;1mfi[0m
+2026-04-04T12:31:59.5673331Z shell: sh -e {0}
+2026-04-04T12:31:59.5673508Z env:
+2026-04-04T12:31:59.5673679Z   build_dir: /tmp/tmp.11ueOr35xV
+2026-04-04T12:31:59.5673911Z   base_dir: /tmp/zmk-config
+2026-04-04T12:31:59.5674117Z   zephyr_version: 4.1.0
+2026-04-04T12:31:59.5674321Z   extra_west_args: 
+2026-04-04T12:31:59.5674763Z   extra_cmake_args: -DSHIELD="moNa2_L rgbled_adapter" -DZMK_EXTRA_MODULES='/__w/zmk-config-moNa2/zmk-config-moNa2'
+2026-04-04T12:31:59.5675304Z   display_name: moNa2_L rgbled_adapter - seeeduino_xiao_ble
+2026-04-04T12:31:59.5675673Z   artifact_name: moNa2_L rgbled_adapter-seeeduino_xiao_ble-zmk
+2026-04-04T12:31:59.5675987Z ##[endgroup]

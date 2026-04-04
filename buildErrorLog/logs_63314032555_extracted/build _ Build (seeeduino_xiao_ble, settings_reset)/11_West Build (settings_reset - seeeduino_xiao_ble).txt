@@ -1,0 +1,468 @@
+﻿2026-04-04T12:32:48.8903821Z ##[group]Run west build -s zmk/app -d "/tmp/tmp.mfYTQzOaHL" -b "seeeduino_xiao_ble"  -- -DZMK_CONFIG=/tmp/zmk-config/config -DSHIELD="settings_reset" -DZMK_EXTRA_MODULES='/__w/zmk-config-moNa2/zmk-config-moNa2' 
+2026-04-04T12:32:48.8905235Z [36;1mwest build -s zmk/app -d "/tmp/tmp.mfYTQzOaHL" -b "seeeduino_xiao_ble"  -- -DZMK_CONFIG=/tmp/zmk-config/config -DSHIELD="settings_reset" -DZMK_EXTRA_MODULES='/__w/zmk-config-moNa2/zmk-config-moNa2' [0m
+2026-04-04T12:32:48.8906130Z shell: sh -x {0}
+2026-04-04T12:32:48.8906314Z env:
+2026-04-04T12:32:48.8906498Z   build_dir: /tmp/tmp.mfYTQzOaHL
+2026-04-04T12:32:48.8906734Z   base_dir: /tmp/zmk-config
+2026-04-04T12:32:48.8906951Z   zephyr_version: 4.1.0
+2026-04-04T12:32:48.8907155Z   extra_west_args: 
+2026-04-04T12:32:48.8907555Z   extra_cmake_args: -DSHIELD="settings_reset" -DZMK_EXTRA_MODULES='/__w/zmk-config-moNa2/zmk-config-moNa2'
+2026-04-04T12:32:48.8908059Z   display_name: settings_reset - seeeduino_xiao_ble
+2026-04-04T12:32:48.8908395Z   artifact_name: settings_reset-seeeduino_xiao_ble-zmk
+2026-04-04T12:32:48.8908711Z ##[endgroup]
+2026-04-04T12:32:48.9395544Z + west build -s zmk/app -d /tmp/tmp.mfYTQzOaHL -b seeeduino_xiao_ble -- -DZMK_CONFIG=/tmp/zmk-config/config -DSHIELD=settings_reset -DZMK_EXTRA_MODULES=/__w/zmk-config-moNa2/zmk-config-moNa2
+2026-04-04T12:32:49.1353233Z -- west build: generating a build system
+2026-04-04T12:32:49.4081009Z Loading Zephyr default modules (Zephyr base).
+2026-04-04T12:32:49.4083148Z -- Application: /tmp/zmk-config/zmk/app
+2026-04-04T12:32:49.4083669Z -- CMake version: 3.31.6
+2026-04-04T12:32:49.5188381Z -- Found Python3: /usr/bin/python3 (found suitable version "3.12.3", minimum required is "3.8") found components: Interpreter
+2026-04-04T12:32:49.5308923Z -- Cache files will be written to: /tmp/zmk-config/zephyr/.cache
+2026-04-04T12:32:49.5369024Z -- Zephyr version: 3.5.0 (/tmp/zmk-config/zephyr)
+2026-04-04T12:32:49.6009340Z -- Found west (found suitable version "1.5.0", minimum required is "0.14.0")
+2026-04-04T12:32:50.0997392Z CMake Deprecation Warning at keymap-module/modules/modules.cmake:53 (message):
+2026-04-04T12:32:50.0998398Z   The `config/boards` folder is deprecated.  Please use a module instead.
+2026-04-04T12:32:50.0999323Z   See https://zmk.dev/docs/development/hardware-integration/new-shield and
+2026-04-04T12:32:50.1000499Z   https://zmk.dev/docs/development/module-creation for more information.
+2026-04-04T12:32:50.1001173Z Call Stack (most recent call first):
+2026-04-04T12:32:50.1001777Z   /tmp/zmk-config/zephyr/cmake/modules/zephyr_module.cmake:130 (include)
+2026-04-04T12:32:50.1002579Z   /tmp/zmk-config/zephyr/cmake/modules/zephyr_default.cmake:129 (include)
+2026-04-04T12:32:50.1003465Z   /tmp/zmk-config/zephyr/share/zephyr-package/cmake/ZephyrConfig.cmake:66 (include)
+2026-04-04T12:32:50.1004500Z   /tmp/zmk-config/zephyr/share/zephyr-package/cmake/ZephyrConfig.cmake:92 (include_boilerplate)
+2026-04-04T12:32:50.1005301Z   CMakeLists.txt:9 (find_package)
+2026-04-04T12:32:50.1005590Z 
+2026-04-04T12:32:50.1005599Z 
+2026-04-04T12:32:50.1005900Z -- Adding ZMK config directory as board root: /tmp/zmk-config/config
+2026-04-04T12:32:50.1144677Z -- Adding /tmp/zmk-config/zmk/app/boards/shields/settings_reset
+2026-04-04T12:32:50.1149284Z -- ZMK Config directory: /tmp/zmk-config/config
+2026-04-04T12:32:50.1152827Z -- Using keymap file: /tmp/zmk-config/zmk/app/boards/shields/settings_reset/settings_reset.keymap
+2026-04-04T12:32:50.1226816Z CMake Warning at /tmp/zmk-config/zephyr/cmake/modules/boards.cmake:92 (message):
+2026-04-04T12:32:50.1227607Z   BOARD_ROOT element without a 'boards' subdirectory:
+2026-04-04T12:32:50.1227985Z 
+2026-04-04T12:32:50.1228143Z   /__w/zmk-config-moNa2/zmk-config-moNa2
+2026-04-04T12:32:50.1228447Z 
+2026-04-04T12:32:50.1228564Z   Hints:
+2026-04-04T12:32:50.1228711Z 
+2026-04-04T12:32:50.1229348Z     - if your board directory is '/foo/bar/boards/<ARCH>/my_board' then add '/foo/bar' to BOARD_ROOT, not the entire board directory
+2026-04-04T12:32:50.1230543Z     - if in doubt, use absolute paths
+2026-04-04T12:32:50.1231398Z Call Stack (most recent call first):
+2026-04-04T12:32:50.1232000Z   /tmp/zmk-config/zephyr/cmake/modules/zephyr_default.cmake:129 (include)
+2026-04-04T12:32:50.1232878Z   /tmp/zmk-config/zephyr/share/zephyr-package/cmake/ZephyrConfig.cmake:66 (include)
+2026-04-04T12:32:50.1233899Z   /tmp/zmk-config/zephyr/share/zephyr-package/cmake/ZephyrConfig.cmake:92 (include_boilerplate)
+2026-04-04T12:32:50.1234680Z   CMakeLists.txt:9 (find_package)
+2026-04-04T12:32:50.1234953Z 
+2026-04-04T12:32:50.1234959Z 
+2026-04-04T12:32:50.1308917Z -- Board: seeeduino_xiao_ble
+2026-04-04T12:32:50.1346852Z -- Shield(s): settings_reset
+2026-04-04T12:32:50.2812637Z -- ZEPHYR_TOOLCHAIN_VARIANT not set, trying to locate Zephyr SDK
+2026-04-04T12:32:50.2835498Z -- Found host-tools: zephyr 0.16.9 (/opt/zephyr-sdk-0.16.9)
+2026-04-04T12:32:50.2843464Z -- Found toolchain: zephyr 0.16.9 (/opt/zephyr-sdk-0.16.9)
+2026-04-04T12:32:50.2879695Z -- Found Dtc: /opt/zephyr-sdk-0.16.9/sysroots/x86_64-pokysdk-linux/usr/bin/dtc (found suitable version "1.6.0", minimum required is "1.4.6")
+2026-04-04T12:32:50.2884076Z -- Found BOARD.dts: /tmp/zmk-config/zephyr/boards/arm/seeeduino_xiao_ble/seeeduino_xiao_ble.dts
+2026-04-04T12:32:50.2885100Z -- Found devicetree overlay: /tmp/zmk-config/zmk/app/boards/seeeduino_xiao_ble.overlay
+2026-04-04T12:32:50.2886325Z -- Found devicetree overlay: /tmp/zmk-config/zmk/app/boards/shields/settings_reset/settings_reset.overlay
+2026-04-04T12:32:50.2887042Z -- Found devicetree overlay: /tmp/zmk-config/zmk/app/boards/shields/settings_reset/settings_reset.keymap
+2026-04-04T12:32:50.5755995Z 'label' is marked as deprecated in 'properties:' in /tmp/zmk-config/zephyr/dts/bindings/mtd/nordic,qspi-nor.yaml for node /soc/qspi@40029000/gd25q16@0.
+2026-04-04T12:32:50.6293892Z -- Generated zephyr.dts: /tmp/tmp.mfYTQzOaHL/zephyr/zephyr.dts
+2026-04-04T12:32:50.6294937Z -- Generated devicetree_generated.h: /tmp/tmp.mfYTQzOaHL/zephyr/include/generated/devicetree_generated.h
+2026-04-04T12:32:51.0019843Z -- Including generated dts.cmake file: /tmp/tmp.mfYTQzOaHL/zephyr/dts.cmake
+2026-04-04T12:32:51.0109503Z /tmp/tmp.mfYTQzOaHL/zephyr/zephyr.dts:61.25-66.5: Warning (unique_unit_address_if_enabled): /soc/clock@40000000: duplicate unit-address (also used in node /soc/power@40000000)
+2026-04-04T12:32:51.0111373Z /tmp/tmp.mfYTQzOaHL/zephyr/zephyr.dts:333.21-337.5: Warning (unique_unit_address_if_enabled): /soc/acl@4001e000: duplicate unit-address (also used in node /soc/flash-controller@4001e000)
+2026-04-04T12:32:51.0113390Z /tmp/tmp.mfYTQzOaHL/zephyr/zephyr.dts:454.23-466.6: Warning (unique_unit_address_if_enabled): /soc/qspi@40029000/gd25q16@0: duplicate unit-address (also used in node /soc/qspi@40029000/p25q16h@0)
+2026-04-04T12:32:51.7557464Z 
+2026-04-04T12:32:51.7558225Z warning: Deprecated symbol NRF_STORE_REBOOT_TYPE_GPREGRET is enabled.
+2026-04-04T12:32:51.7558900Z 
+2026-04-04T12:32:51.9060986Z Parsing /tmp/zmk-config/zmk/app/Kconfig
+2026-04-04T12:32:51.9061885Z Loaded configuration '/tmp/zmk-config/zephyr/boards/arm/seeeduino_xiao_ble/seeeduino_xiao_ble_defconfig'
+2026-04-04T12:32:51.9062769Z Merged configuration '/tmp/zmk-config/zmk/app/prj.conf'
+2026-04-04T12:32:51.9063421Z Merged configuration '/tmp/zmk-config/zmk/app/boards/seeeduino_xiao_ble.conf'
+2026-04-04T12:32:51.9064273Z Merged configuration '/tmp/zmk-config/zmk/app/boards/shields/settings_reset/settings_reset.conf'
+2026-04-04T12:32:51.9065116Z Configuration saved to '/tmp/tmp.mfYTQzOaHL/zephyr/.config'
+2026-04-04T12:32:51.9065841Z Kconfig header saved to '/tmp/tmp.mfYTQzOaHL/zephyr/include/generated/autoconf.h'
+2026-04-04T12:32:52.0718188Z -- Found GnuLd: /opt/zephyr-sdk-0.16.9/arm-zephyr-eabi/bin/../lib/gcc/arm-zephyr-eabi/12.2.0/../../../../arm-zephyr-eabi/bin/ld.bfd (found version "2.38")
+2026-04-04T12:32:52.1273854Z -- The C compiler identification is GNU 12.2.0
+2026-04-04T12:32:52.1803446Z -- The CXX compiler identification is GNU 12.2.0
+2026-04-04T12:32:52.1964431Z -- The ASM compiler identification is GNU
+2026-04-04T12:32:52.1979288Z -- Found assembler: /opt/zephyr-sdk-0.16.9/arm-zephyr-eabi/bin/arm-zephyr-eabi-gcc
+2026-04-04T12:32:52.3908708Z CMake Warning at /tmp/zmk-config/zephyr/CMakeLists.txt:887 (message):
+2026-04-04T12:32:52.3909539Z   No SOURCES given to Zephyr library: ..__zmk-pmw3610-driver
+2026-04-04T12:32:52.3909961Z 
+2026-04-04T12:32:52.3910358Z   Excluding target from build.
+2026-04-04T12:32:52.3910628Z 
+2026-04-04T12:32:52.3910635Z 
+2026-04-04T12:32:52.4061437Z -- Configuring done (3.0s)
+2026-04-04T12:32:52.5474085Z -- Generating done (0.1s)
+2026-04-04T12:32:52.5479374Z -- Build files have been written to: /tmp/tmp.mfYTQzOaHL
+2026-04-04T12:32:52.5821357Z -- west build: building application
+2026-04-04T12:32:52.8833722Z [1/202] Preparing syscall dependency handling
+2026-04-04T12:32:52.8834163Z 
+2026-04-04T12:32:52.8897181Z [2/202] Generating include/generated/app_version.h
+2026-04-04T12:32:52.8938715Z [3/202] Generating include/generated/version.h
+2026-04-04T12:32:52.8939620Z -- Zephyr version: 3.5.0 (/tmp/zmk-config/zephyr), build: dacab4875df7
+2026-04-04T12:32:52.9222087Z [4/202] Generating misc/generated/syscalls_subdirs.trigger
+2026-04-04T12:32:53.1844520Z [5/202] Generating misc/generated/syscalls.json, misc/generated/struct_tags.json
+2026-04-04T12:32:53.2594661Z [6/202] Generating include/generated/syscall_dispatch.c, include/generated/syscall_list.h
+2026-04-04T12:32:53.2680315Z [7/202] Generating include/generated/kobj-types-enum.h, include/generated/otype-to-str.h, include/generated/otype-to-size.h
+2026-04-04T12:32:53.2898307Z [8/202] Generating include/generated/driver-validation.h
+2026-04-04T12:32:53.3887498Z [9/202] Building C object zephyr/CMakeFiles/offsets.dir/arch/arm/core/offsets/offsets.c.obj
+2026-04-04T12:32:53.4634932Z [10/202] Generating include/generated/offsets.h
+2026-04-04T12:32:53.5229416Z [11/202] Building C object CMakeFiles/app.dir/src/stdlib.c.obj
+2026-04-04T12:32:53.6365159Z [12/202] Building C object CMakeFiles/app.dir/src/matrix_transform.c.obj
+2026-04-04T12:32:53.6688387Z [13/202] Building C object CMakeFiles/app.dir/src/sensors.c.obj
+2026-04-04T12:32:53.8257673Z [14/202] Building C object CMakeFiles/app.dir/src/behavior.c.obj
+2026-04-04T12:32:53.8330411Z [15/202] Building C object CMakeFiles/app.dir/src/ext_power_generic.c.obj
+2026-04-04T12:32:53.8636800Z [16/202] Building C object CMakeFiles/app.dir/src/event_manager.c.obj
+2026-04-04T12:32:53.8778636Z [17/202] Building C object CMakeFiles/app.dir/src/activity.c.obj
+2026-04-04T12:32:53.8914780Z [18/202] Building C object CMakeFiles/app.dir/src/physical_layouts.c.obj
+2026-04-04T12:32:53.9114460Z [19/202] Building C object CMakeFiles/app.dir/src/events/activity_state_changed.c.obj
+2026-04-04T12:32:54.0408165Z [20/202] Building C object CMakeFiles/app.dir/src/events/usb_conn_state_changed.c.obj
+2026-04-04T12:32:54.0948181Z [21/202] Building C object CMakeFiles/app.dir/src/events/position_state_changed.c.obj
+2026-04-04T12:32:54.1495294Z [22/202] Building C object CMakeFiles/app.dir/src/behaviors/behavior_reset.c.obj
+2026-04-04T12:32:54.1696963Z [23/202] Building C object CMakeFiles/app.dir/src/events/sensor_event.c.obj
+2026-04-04T12:32:54.3276760Z [24/202] Building C object CMakeFiles/app.dir/src/behaviors/behavior_ext_power.c.obj
+2026-04-04T12:32:54.3474738Z [25/202] Building C object CMakeFiles/app.dir/src/hid.c.obj
+2026-04-04T12:32:54.3677784Z [26/202] Building C object CMakeFiles/app.dir/src/behaviors/behavior_key_repeat.c.obj
+2026-04-04T12:32:54.3716987Z [27/202] Building C object CMakeFiles/app.dir/src/behaviors/behavior_key_press.c.obj
+2026-04-04T12:32:54.4307119Z [28/202] Building C object CMakeFiles/app.dir/src/behaviors/behavior_caps_word.c.obj
+2026-04-04T12:32:54.5046238Z [29/202] Building C object CMakeFiles/app.dir/src/behaviors/behavior_momentary_layer.c.obj
+2026-04-04T12:32:54.5495064Z [30/202] Building C object CMakeFiles/app.dir/src/behaviors/behavior_toggle_layer.c.obj
+2026-04-04T12:32:54.5752297Z [31/202] Building C object CMakeFiles/app.dir/src/behaviors/behavior_to_layer.c.obj
+2026-04-04T12:32:54.6072670Z [32/202] Building C object CMakeFiles/app.dir/src/behaviors/behavior_outputs.c.obj
+2026-04-04T12:32:54.6609712Z [33/202] Building C object CMakeFiles/app.dir/src/behaviors/behavior_mod_morph.c.obj
+2026-04-04T12:32:54.7522554Z [34/202] Building C object CMakeFiles/app.dir/src/behaviors/behavior_none.c.obj
+2026-04-04T12:32:54.7563375Z [35/202] Building C object CMakeFiles/app.dir/src/behaviors/behavior_transparent.c.obj
+2026-04-04T12:32:54.7718516Z [36/202] Building C object CMakeFiles/app.dir/src/combo.c.obj
+2026-04-04T12:32:54.8319599Z [37/202] Building C object CMakeFiles/app.dir/src/conditional_layer.c.obj
+2026-04-04T12:32:54.8735090Z [38/202] Building C object CMakeFiles/app.dir/src/behavior_queue.c.obj
+2026-04-04T12:32:54.9456895Z [39/202] Building C object CMakeFiles/app.dir/src/events/endpoint_changed.c.obj
+2026-04-04T12:32:55.1265829Z [40/202] Building C object CMakeFiles/app.dir/src/events/layer_state_changed.c.obj
+2026-04-04T12:32:55.1799675Z [41/202] Building C object CMakeFiles/app.dir/src/keymap.c.obj
+2026-04-04T12:32:55.1805821Z In file included from /tmp/zmk-config/zephyr/include/zephyr/sys/util_macro.h:34,
+2026-04-04T12:32:55.1807388Z                  from /tmp/zmk-config/zephyr/include/zephyr/sys/util.h:17,
+2026-04-04T12:32:55.1809731Z                  from /tmp/zmk-config/zmk/app/include/drivers/behavior.h:11,
+2026-04-04T12:32:55.1812936Z                  from /tmp/zmk-config/zmk/app/src/keymap.c:7:
+2026-04-04T12:32:55.1813790Z /tmp/zmk-config/zmk/app/include/zmk/keymap.h:80:5: warning: excess elements in array initializer
+2026-04-04T12:32:55.1814712Z    80 |     {                                                                                              \
+2026-04-04T12:32:55.1815266Z       |     ^
+2026-04-04T12:32:55.1816028Z /tmp/zmk-config/zephyr/include/zephyr/sys/util_internal.h:72:26: note: in definition of macro '__DEBRACKET'
+2026-04-04T12:32:55.1816932Z    72 | #define __DEBRACKET(...) __VA_ARGS__
+2026-04-04T12:32:55.1817378Z       |                          ^~~~~~~~~~~
+2026-04-04T12:32:55.1818246Z /tmp/zmk-config/zephyr/include/zephyr/sys/util_internal.h:64:9: note: in expansion of macro '__GET_ARG2_DEBRACKET'
+2026-04-04T12:32:55.1819296Z    64 |         __GET_ARG2_DEBRACKET(one_or_two_args _if_code, _else_code)
+2026-04-04T12:32:55.1819867Z       |         ^~~~~~~~~~~~~~~~~~~~
+2026-04-04T12:32:55.1821630Z /tmp/zmk-config/zephyr/include/zephyr/sys/util_internal.h:61:9: note: in expansion of macro '__COND_CODE'
+2026-04-04T12:32:55.1822587Z    61 |         __COND_CODE(_ZZZZ##_flag, _if_0_code, _else_code)
+2026-04-04T12:32:55.1823086Z       |         ^~~~~~~~~~~
+2026-04-04T12:32:55.1823817Z /tmp/zmk-config/zephyr/include/zephyr/sys/util_macro.h:196:9: note: in expansion of macro 'Z_COND_CODE_0'
+2026-04-04T12:32:55.1824730Z   196 |         Z_COND_CODE_0(_flag, _if_0_code, _else_code)
+2026-04-04T12:32:55.1825225Z       |         ^~~~~~~~~~~~~
+2026-04-04T12:32:55.1825843Z /tmp/zmk-config/zmk/app/src/keymap.c:77:9: note: in expansion of macro 'COND_CODE_0'
+2026-04-04T12:32:55.1826800Z    77 |         COND_CODE_0(                                                                               \
+2026-04-04T12:32:55.1827406Z       |         ^~~~~~~~~~~
+2026-04-04T12:32:55.1828167Z /tmp/zmk-config/zephyr/include/zephyr/sys/util_internal.h:69:53: note: in expansion of macro '__DEBRACKET'
+2026-04-04T12:32:55.1829182Z    69 | #define __GET_ARG2_DEBRACKET(ignore_this, val, ...) __DEBRACKET val
+2026-04-04T12:32:55.1829849Z       |                                                     ^~~~~~~~~~~
+2026-04-04T12:32:55.1831095Z /tmp/zmk-config/zephyr/include/zephyr/sys/util_internal.h:64:9: note: in expansion of macro '__GET_ARG2_DEBRACKET'
+2026-04-04T12:32:55.1832056Z    64 |         __GET_ARG2_DEBRACKET(one_or_two_args _if_code, _else_code)
+2026-04-04T12:32:55.1832583Z       |         ^~~~~~~~~~~~~~~~~~~~
+2026-04-04T12:32:55.1833361Z /tmp/zmk-config/zephyr/include/zephyr/sys/util_internal.h:59:9: note: in expansion of macro '__COND_CODE'
+2026-04-04T12:32:55.1834252Z    59 |         __COND_CODE(_XXXX##_flag, _if_1_code, _else_code)
+2026-04-04T12:32:55.1834724Z       |         ^~~~~~~~~~~
+2026-04-04T12:32:55.1835677Z /tmp/zmk-config/zephyr/include/zephyr/sys/util_macro.h:180:9: note: in expansion of macro 'Z_COND_CODE_1'
+2026-04-04T12:32:55.1836520Z   180 |         Z_COND_CODE_1(_flag, _if_1_code, _else_code)
+2026-04-04T12:32:55.1836983Z       |         ^~~~~~~~~~~~~
+2026-04-04T12:32:55.1837565Z /tmp/zmk-config/zmk/app/src/keymap.c:79:14: note: in expansion of macro 'COND_CODE_1'
+2026-04-04T12:32:55.1838473Z    79 |             (COND_CODE_1(IS_ENABLED(CONFIG_ZMK_STUDIO),                                            \
+2026-04-04T12:32:55.1839179Z       |              ^~~~~~~~~~~
+2026-04-04T12:32:55.1839934Z /tmp/zmk-config/zephyr/include/zephyr/sys/util_internal.h:69:53: note: in expansion of macro '__DEBRACKET'
+2026-04-04T12:32:55.1841253Z    69 | #define __GET_ARG2_DEBRACKET(ignore_this, val, ...) __DEBRACKET val
+2026-04-04T12:32:55.1841892Z       |                                                     ^~~~~~~~~~~
+2026-04-04T12:32:55.1842775Z /tmp/zmk-config/zephyr/include/zephyr/sys/util_internal.h:64:9: note: in expansion of macro '__GET_ARG2_DEBRACKET'
+2026-04-04T12:32:55.1843676Z    64 |         __GET_ARG2_DEBRACKET(one_or_two_args _if_code, _else_code)
+2026-04-04T12:32:55.1844165Z       |         ^~~~~~~~~~~~~~~~~~~~
+2026-04-04T12:32:55.1844895Z /tmp/zmk-config/zephyr/include/zephyr/sys/util_internal.h:59:9: note: in expansion of macro '__COND_CODE'
+2026-04-04T12:32:55.1845995Z    59 |         __COND_CODE(_XXXX##_flag, _if_1_code, _else_code)
+2026-04-04T12:32:55.1846500Z       |         ^~~~~~~~~~~
+2026-04-04T12:32:55.1847237Z /tmp/zmk-config/zephyr/include/zephyr/sys/util_macro.h:180:9: note: in expansion of macro 'Z_COND_CODE_1'
+2026-04-04T12:32:55.1848131Z   180 |         Z_COND_CODE_1(_flag, _if_1_code, _else_code)
+2026-04-04T12:32:55.1848609Z       |         ^~~~~~~~~~~~~
+2026-04-04T12:32:55.1849217Z /tmp/zmk-config/zmk/app/src/keymap.c:38:6: note: in expansion of macro 'COND_CODE_1'
+2026-04-04T12:32:55.1850427Z    38 |     {COND_CODE_1(DT_NODE_HAS_PROP(node, bindings),                                                 \
+2026-04-04T12:32:55.1851144Z       |      ^~~~~~~~~~~
+2026-04-04T12:32:55.1851968Z /tmp/zmk-config/zephyr/include/zephyr/sys/util_listify.h:18:9: note: in expansion of macro 'ZMK_KEYMAP_EXTRACT_BINDING'
+2026-04-04T12:32:55.1852865Z    18 |         F(0, __VA_ARGS__)
+2026-04-04T12:32:55.1853254Z       |         ^
+2026-04-04T12:32:55.1853980Z /tmp/zmk-config/zephyr/include/zephyr/sys/util_internal.h:105:36: note: in expansion of macro 'Z_UTIL_LISTIFY_1'
+2026-04-04T12:32:55.1859836Z   105 | #define UTIL_PRIMITIVE_CAT(a, ...) a##__VA_ARGS__
+2026-04-04T12:32:55.1866196Z       |                                    ^
+2026-04-04T12:32:55.1866900Z /tmp/zmk-config/zmk/app/src/keymap.c:39:19: note: in expansion of macro 'LISTIFY'
+2026-04-04T12:32:55.1867900Z    39 |                  (LISTIFY(DT_PROP_LEN(node, bindings), ZMK_KEYMAP_EXTRACT_BINDING, (, ), node)),   \
+2026-04-04T12:32:55.1868650Z       |                   ^~~~~~~
+2026-04-04T12:32:55.1869682Z /tmp/tmp.mfYTQzOaHL/zephyr/include/generated/devicetree_generated.h:3479:62: note: in expansion of macro 'TRANSFORMED_LAYER'
+2026-04-04T12:32:55.1871848Z  3479 | #define DT_N_S_keymap_FOREACH_CHILD_STATUS_OKAY_SEP(fn, sep) fn(DT_N_S_keymap_S_default_layer)
+2026-04-04T12:32:55.1872706Z       |                                                              ^~
+2026-04-04T12:32:55.1873871Z /tmp/zmk-config/zephyr/include/zephyr/devicetree.h:4261:24: note: in expansion of macro 'DT_N_S_keymap_FOREACH_CHILD_STATUS_OKAY_SEP'
+2026-04-04T12:32:55.1874922Z  4261 | #define DT_CAT(a1, a2) a1 ## a2
+2026-04-04T12:32:55.1875359Z       |                        ^~
+2026-04-04T12:32:55.1876210Z /tmp/zmk-config/zephyr/include/zephyr/devicetree.h:3376:9: note: in expansion of macro 'DT_FOREACH_CHILD_STATUS_OKAY_SEP'
+2026-04-04T12:32:55.1877263Z  3376 |         DT_FOREACH_CHILD_STATUS_OKAY_SEP(DT_DRV_INST(inst), fn, sep)
+2026-04-04T12:32:55.1877854Z       |         ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+2026-04-04T12:32:55.1878675Z /tmp/zmk-config/zmk/app/src/keymap.c:81:27: note: in expansion of macro 'DT_INST_FOREACH_CHILD_STATUS_OKAY_SEP'
+2026-04-04T12:32:55.1879946Z    81 |                          (DT_INST_FOREACH_CHILD_STATUS_OKAY_SEP(0, TRANSFORMED_LAYER, (, ))))),    \
+2026-04-04T12:32:55.1880979Z       |                           ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+2026-04-04T12:32:55.1881729Z /tmp/zmk-config/zmk/app/src/keymap.c:84:1: note: in expansion of macro 'KEYMAP_VAR'
+2026-04-04T12:32:55.1882745Z    84 | KEYMAP_VAR(zmk_keymap, COND_CODE_1(IS_ENABLED(CONFIG_ZMK_KEYMAP_SETTINGS_STORAGE), (), (const)),
+2026-04-04T12:32:55.1883499Z       | ^~~~~~~~~~
+2026-04-04T12:32:55.1884326Z /tmp/zmk-config/zmk/app/include/zmk/keymap.h:80:5: note: (near initialization for 'zmk_keymap[0]')
+2026-04-04T12:32:55.1885239Z    80 |     {                                                                                              \
+2026-04-04T12:32:55.1885785Z       |     ^
+2026-04-04T12:32:55.1886507Z /tmp/zmk-config/zephyr/include/zephyr/sys/util_internal.h:72:26: note: in definition of macro '__DEBRACKET'
+2026-04-04T12:32:55.1887371Z    72 | #define __DEBRACKET(...) __VA_ARGS__
+2026-04-04T12:32:55.1887814Z       |                          ^~~~~~~~~~~
+2026-04-04T12:32:55.1888644Z /tmp/zmk-config/zephyr/include/zephyr/sys/util_internal.h:64:9: note: in expansion of macro '__GET_ARG2_DEBRACKET'
+2026-04-04T12:32:55.1889897Z    64 |         __GET_ARG2_DEBRACKET(one_or_two_args _if_code, _else_code)
+2026-04-04T12:32:55.1894577Z       |         ^~~~~~~~~~~~~~~~~~~~
+2026-04-04T12:32:55.1895411Z /tmp/zmk-config/zephyr/include/zephyr/sys/util_internal.h:61:9: note: in expansion of macro '__COND_CODE'
+2026-04-04T12:32:55.1896348Z    61 |         __COND_CODE(_ZZZZ##_flag, _if_0_code, _else_code)
+2026-04-04T12:32:55.1896850Z       |         ^~~~~~~~~~~
+2026-04-04T12:32:55.1897517Z /tmp/zmk-config/zephyr/include/zephyr/sys/util_macro.h:196:9: note: in expansion of macro 'Z_COND_CODE_0'
+2026-04-04T12:32:55.1898290Z   196 |         Z_COND_CODE_0(_flag, _if_0_code, _else_code)
+2026-04-04T12:32:55.1898725Z       |         ^~~~~~~~~~~~~
+2026-04-04T12:32:55.1899268Z /tmp/zmk-config/zmk/app/src/keymap.c:77:9: note: in expansion of macro 'COND_CODE_0'
+2026-04-04T12:32:55.1900300Z    77 |         COND_CODE_0(                                                                               \
+2026-04-04T12:32:55.1900850Z       |         ^~~~~~~~~~~
+2026-04-04T12:32:55.1901522Z /tmp/zmk-config/zephyr/include/zephyr/sys/util_internal.h:69:53: note: in expansion of macro '__DEBRACKET'
+2026-04-04T12:32:55.1902414Z    69 | #define __GET_ARG2_DEBRACKET(ignore_this, val, ...) __DEBRACKET val
+2026-04-04T12:32:55.1902986Z       |                                                     ^~~~~~~~~~~
+2026-04-04T12:32:55.1903813Z /tmp/zmk-config/zephyr/include/zephyr/sys/util_internal.h:64:9: note: in expansion of macro '__GET_ARG2_DEBRACKET'
+2026-04-04T12:32:55.1904717Z    64 |         __GET_ARG2_DEBRACKET(one_or_two_args _if_code, _else_code)
+2026-04-04T12:32:55.1905226Z       |         ^~~~~~~~~~~~~~~~~~~~
+2026-04-04T12:32:55.1905957Z /tmp/zmk-config/zephyr/include/zephyr/sys/util_internal.h:59:9: note: in expansion of macro '__COND_CODE'
+2026-04-04T12:32:55.1906893Z    59 |         __COND_CODE(_XXXX##_flag, _if_1_code, _else_code)
+2026-04-04T12:32:55.1907393Z       |         ^~~~~~~~~~~
+2026-04-04T12:32:55.1908126Z /tmp/zmk-config/zephyr/include/zephyr/sys/util_macro.h:180:9: note: in expansion of macro 'Z_COND_CODE_1'
+2026-04-04T12:32:55.1909030Z   180 |         Z_COND_CODE_1(_flag, _if_1_code, _else_code)
+2026-04-04T12:32:55.1909485Z       |         ^~~~~~~~~~~~~
+2026-04-04T12:32:55.1910468Z /tmp/zmk-config/zmk/app/src/keymap.c:79:14: note: in expansion of macro 'COND_CODE_1'
+2026-04-04T12:32:55.1911419Z    79 |             (COND_CODE_1(IS_ENABLED(CONFIG_ZMK_STUDIO),                                            \
+2026-04-04T12:32:55.1912093Z       |              ^~~~~~~~~~~
+2026-04-04T12:32:55.1912853Z /tmp/zmk-config/zephyr/include/zephyr/sys/util_internal.h:69:53: note: in expansion of macro '__DEBRACKET'
+2026-04-04T12:32:55.1914002Z    69 | #define __GET_ARG2_DEBRACKET(ignore_this, val, ...) __DEBRACKET val
+2026-04-04T12:32:55.1914622Z       |                                                     ^~~~~~~~~~~
+2026-04-04T12:32:55.1915455Z /tmp/zmk-config/zephyr/include/zephyr/sys/util_internal.h:64:9: note: in expansion of macro '__GET_ARG2_DEBRACKET'
+2026-04-04T12:32:55.1916352Z    64 |         __GET_ARG2_DEBRACKET(one_or_two_args _if_code, _else_code)
+2026-04-04T12:32:55.1916841Z       |         ^~~~~~~~~~~~~~~~~~~~
+2026-04-04T12:32:55.1917640Z /tmp/zmk-config/zephyr/include/zephyr/sys/util_internal.h:59:9: note: in expansion of macro '__COND_CODE'
+2026-04-04T12:32:55.1918462Z    59 |         __COND_CODE(_XXXX##_flag, _if_1_code, _else_code)
+2026-04-04T12:32:55.1918915Z       |         ^~~~~~~~~~~
+2026-04-04T12:32:55.1919695Z /tmp/zmk-config/zephyr/include/zephyr/sys/util_macro.h:180:9: note: in expansion of macro 'Z_COND_CODE_1'
+2026-04-04T12:32:55.1920817Z   180 |         Z_COND_CODE_1(_flag, _if_1_code, _else_code)
+2026-04-04T12:32:55.1921296Z       |         ^~~~~~~~~~~~~
+2026-04-04T12:32:55.1921877Z /tmp/zmk-config/zmk/app/src/keymap.c:38:6: note: in expansion of macro 'COND_CODE_1'
+2026-04-04T12:32:55.1922810Z    38 |     {COND_CODE_1(DT_NODE_HAS_PROP(node, bindings),                                                 \
+2026-04-04T12:32:55.1923670Z       |      ^~~~~~~~~~~
+2026-04-04T12:32:55.1924486Z /tmp/zmk-config/zephyr/include/zephyr/sys/util_listify.h:18:9: note: in expansion of macro 'ZMK_KEYMAP_EXTRACT_BINDING'
+2026-04-04T12:32:55.1925384Z    18 |         F(0, __VA_ARGS__)
+2026-04-04T12:32:55.1925735Z       |         ^
+2026-04-04T12:32:55.1926507Z /tmp/zmk-config/zephyr/include/zephyr/sys/util_internal.h:105:36: note: in expansion of macro 'Z_UTIL_LISTIFY_1'
+2026-04-04T12:32:55.1927407Z   105 | #define UTIL_PRIMITIVE_CAT(a, ...) a##__VA_ARGS__
+2026-04-04T12:32:55.1927887Z       |                                    ^
+2026-04-04T12:32:55.1928500Z /tmp/zmk-config/zmk/app/src/keymap.c:39:19: note: in expansion of macro 'LISTIFY'
+2026-04-04T12:32:55.1929414Z    39 |                  (LISTIFY(DT_PROP_LEN(node, bindings), ZMK_KEYMAP_EXTRACT_BINDING, (, ), node)),   \
+2026-04-04T12:32:55.1930277Z       |                   ^~~~~~~
+2026-04-04T12:32:55.1931155Z /tmp/tmp.mfYTQzOaHL/zephyr/include/generated/devicetree_generated.h:3479:62: note: in expansion of macro 'TRANSFORMED_LAYER'
+2026-04-04T12:32:55.1932411Z  3479 | #define DT_N_S_keymap_FOREACH_CHILD_STATUS_OKAY_SEP(fn, sep) fn(DT_N_S_keymap_S_default_layer)
+2026-04-04T12:32:55.1933220Z       |                                                              ^~
+2026-04-04T12:32:55.1934267Z /tmp/zmk-config/zephyr/include/zephyr/devicetree.h:4261:24: note: in expansion of macro 'DT_N_S_keymap_FOREACH_CHILD_STATUS_OKAY_SEP'
+2026-04-04T12:32:55.1935267Z  4261 | #define DT_CAT(a1, a2) a1 ## a2
+2026-04-04T12:32:55.1935664Z       |                        ^~
+2026-04-04T12:32:55.1936494Z /tmp/zmk-config/zephyr/include/zephyr/devicetree.h:3376:9: note: in expansion of macro 'DT_FOREACH_CHILD_STATUS_OKAY_SEP'
+2026-04-04T12:32:55.1937459Z  3376 |         DT_FOREACH_CHILD_STATUS_OKAY_SEP(DT_DRV_INST(inst), fn, sep)
+2026-04-04T12:32:55.1937992Z       |         ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+2026-04-04T12:32:55.1938717Z /tmp/zmk-config/zmk/app/src/keymap.c:81:27: note: in expansion of macro 'DT_INST_FOREACH_CHILD_STATUS_OKAY_SEP'
+2026-04-04T12:32:55.1939814Z    81 |                          (DT_INST_FOREACH_CHILD_STATUS_OKAY_SEP(0, TRANSFORMED_LAYER, (, ))))),    \
+2026-04-04T12:32:55.1940814Z       |                           ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+2026-04-04T12:32:55.1941541Z /tmp/zmk-config/zmk/app/src/keymap.c:84:1: note: in expansion of macro 'KEYMAP_VAR'
+2026-04-04T12:32:55.1942571Z    84 | KEYMAP_VAR(zmk_keymap, COND_CODE_1(IS_ENABLED(CONFIG_ZMK_KEYMAP_SETTINGS_STORAGE), (), (const)),
+2026-04-04T12:32:55.1943327Z       | ^~~~~~~~~~
+2026-04-04T12:32:55.1943919Z /tmp/zmk-config/zmk/app/src/keymap.c: In function 'zmk_keymap_position_state_changed':
+2026-04-04T12:32:55.1945305Z /tmp/zmk-config/zmk/app/src/keymap.c:710:41: warning: array subscript position is outside array bounds of 'uint32_t[0]' {aka 'unsigned int[]'} [-Warray-bounds]
+2026-04-04T12:32:55.1946932Z   710 |         zmk_keymap_active_behavior_layer[position] = _zmk_keymap_layer_state;
+2026-04-04T12:32:55.1947637Z       |         ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~
+2026-04-04T12:32:55.1948439Z /tmp/zmk-config/zmk/app/src/keymap.c:67:17: note: while referencing 'zmk_keymap_active_behavior_layer'
+2026-04-04T12:32:55.1949400Z    67 | static uint32_t zmk_keymap_active_behavior_layer[ZMK_KEYMAP_LEN];
+2026-04-04T12:32:55.1950286Z       |                 ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+2026-04-04T12:32:55.1951475Z /tmp/zmk-config/zmk/app/src/keymap.c:721:13: warning: array subscript position is outside array bounds of 'uint32_t[0]' {aka 'unsigned int[]'} [-Warray-bounds]
+2026-04-04T12:32:55.1952689Z   721 |         if (zmk_keymap_layer_active_with_state(layer_id,
+2026-04-04T12:32:55.1953238Z       |             ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+2026-04-04T12:32:55.1953877Z   722 |                                                zmk_keymap_active_behavior_layer[position])) {
+2026-04-04T12:32:55.1954578Z       |                                                ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+2026-04-04T12:32:55.1955662Z /tmp/zmk-config/zmk/app/src/keymap.c:67:17: note: while referencing 'zmk_keymap_active_behavior_layer'
+2026-04-04T12:32:55.1956626Z    67 | static uint32_t zmk_keymap_active_behavior_layer[ZMK_KEYMAP_LEN];
+2026-04-04T12:32:55.1965391Z       |                 ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+2026-04-04T12:32:55.1968456Z [42/202] Building C object CMakeFiles/app.dir/src/events/keycode_state_changed.c.obj
+2026-04-04T12:32:55.2050302Z [43/202] Building C object CMakeFiles/app.dir/src/hid_listener.c.obj
+2026-04-04T12:32:55.2057144Z [44/202] Building C object CMakeFiles/app.dir/src/events/modifiers_state_changed.c.obj
+2026-04-04T12:32:55.2741469Z [45/202] Building C object CMakeFiles/app.dir/src/endpoints.c.obj
+2026-04-04T12:32:55.2995999Z [46/202] Building C object CMakeFiles/app.dir/src/settings/reset_settings_on_start.c.obj
+2026-04-04T12:32:55.3109999Z [47/202] Building C object zephyr/CMakeFiles/zephyr.dir/lib/crc/crc32c_sw.c.obj
+2026-04-04T12:32:55.3597653Z [48/202] Building C object zephyr/CMakeFiles/zephyr.dir/lib/crc/crc32_sw.c.obj
+2026-04-04T12:32:55.3633595Z [49/202] Building C object CMakeFiles/app.dir/src/usb.c.obj
+2026-04-04T12:32:55.3954831Z [50/202] Building C object zephyr/CMakeFiles/zephyr.dir/lib/crc/crc16_sw.c.obj
+2026-04-04T12:32:55.4267292Z [51/202] Building C object zephyr/CMakeFiles/zephyr.dir/lib/crc/crc7_sw.c.obj
+2026-04-04T12:32:55.4326333Z [52/202] Building C object CMakeFiles/app.dir/src/settings/reset_settings_nvs.c.obj
+2026-04-04T12:32:55.4388456Z [53/202] Building C object zephyr/CMakeFiles/zephyr.dir/lib/crc/crc8_sw.c.obj
+2026-04-04T12:32:55.4746243Z [54/202] Building C object CMakeFiles/app.dir/src/main.c.obj
+2026-04-04T12:32:55.4997506Z [55/202] Building C object zephyr/CMakeFiles/zephyr.dir/lib/os/dec.c.obj
+2026-04-04T12:32:55.5134631Z [56/202] Building C object zephyr/CMakeFiles/zephyr.dir/lib/crc/crc4_sw.c.obj
+2026-04-04T12:32:55.5547432Z [57/202] Building C object zephyr/CMakeFiles/zephyr.dir/lib/os/hex.c.obj
+2026-04-04T12:32:55.6695253Z [58/202] Building C object CMakeFiles/app.dir/src/usb_hid.c.obj
+2026-04-04T12:32:55.7497084Z [59/202] Building C object zephyr/CMakeFiles/zephyr.dir/lib/os/thread_entry.c.obj
+2026-04-04T12:32:55.7641487Z [60/202] Linking C static library app/libapp.a
+2026-04-04T12:32:55.7661066Z [61/202] Building C object zephyr/CMakeFiles/zephyr.dir/lib/os/printk.c.obj
+2026-04-04T12:32:55.8058592Z [62/202] Building C object zephyr/CMakeFiles/zephyr.dir/lib/os/sem.c.obj
+2026-04-04T12:32:55.8753196Z [63/202] Building C object zephyr/CMakeFiles/zephyr.dir/lib/os/timeutil.c.obj
+2026-04-04T12:32:55.8774282Z [64/202] Building C object zephyr/CMakeFiles/zephyr.dir/lib/os/cbprintf_packaged.c.obj
+2026-04-04T12:32:55.9464107Z [65/202] Building C object zephyr/CMakeFiles/zephyr.dir/lib/os/rb.c.obj
+2026-04-04T12:32:56.0387738Z [66/202] Building C object zephyr/CMakeFiles/zephyr.dir/lib/os/multi_heap.c.obj
+2026-04-04T12:32:56.0929605Z [67/202] Building C object zephyr/CMakeFiles/zephyr.dir/lib/os/heap.c.obj
+2026-04-04T12:32:56.2406889Z [68/202] Building C object zephyr/CMakeFiles/zephyr.dir/lib/os/heap-validate.c.obj
+2026-04-04T12:32:56.2418872Z [69/202] Building C object zephyr/CMakeFiles/zephyr.dir/lib/os/assert.c.obj
+2026-04-04T12:32:56.2552227Z [70/202] Building C object zephyr/CMakeFiles/zephyr.dir/lib/os/notify.c.obj
+2026-04-04T12:32:56.2726318Z [71/202] Building C object zephyr/CMakeFiles/zephyr.dir/lib/os/onoff.c.obj
+2026-04-04T12:32:56.2763557Z [72/202] Building C object zephyr/CMakeFiles/zephyr.dir/lib/os/bitarray.c.obj
+2026-04-04T12:32:56.2814989Z [73/202] Building ASM object zephyr/CMakeFiles/zephyr.dir/soc/arm/nordic_nrf/common/soc_nrf_common.S.obj
+2026-04-04T12:32:56.3265465Z [74/202] Building C object zephyr/CMakeFiles/zephyr.dir/misc/generated/configs.c.obj
+2026-04-04T12:32:56.3592631Z [75/202] Building C object zephyr/CMakeFiles/zephyr.dir/lib/os/cbprintf_nano.c.obj
+2026-04-04T12:32:56.4836213Z [76/202] Building C object zephyr/CMakeFiles/zephyr.dir/subsys/storage/flash_map/flash_map.c.obj
+2026-04-04T12:32:56.5051799Z [77/202] Building C object zephyr/CMakeFiles/zephyr.dir/subsys/mem_mgmt/mem_attr.c.obj
+2026-04-04T12:32:56.5061215Z [78/202] Building C object zephyr/CMakeFiles/zephyr.dir/soc/arm/nordic_nrf/validate_enabled_instances.c.obj
+2026-04-04T12:32:56.5240549Z [79/202] Building C object zephyr/CMakeFiles/zephyr.dir/lib/os/reboot.c.obj
+2026-04-04T12:32:56.5394593Z [80/202] Building C object zephyr/CMakeFiles/zephyr.dir/soc/arm/nordic_nrf/validate_base_addresses.c.obj
+2026-04-04T12:32:56.5645844Z [81/202] Building C object zephyr/CMakeFiles/zephyr.dir/subsys/tracing/tracing_none.c.obj
+2026-04-04T12:32:56.6262546Z [82/202] Building C object zephyr/CMakeFiles/zephyr.dir/subsys/storage/flash_map/flash_map_layout.c.obj
+2026-04-04T12:32:56.7521234Z [83/202] Building C object zephyr/CMakeFiles/zephyr.dir/subsys/storage/flash_map/flash_map_default.c.obj
+2026-04-04T12:32:57.0417800Z [84/202] Building C object zephyr/CMakeFiles/zephyr.dir/subsys/settings/src/settings_store.c.obj
+2026-04-04T12:32:57.0911643Z [85/202] Building C object zephyr/CMakeFiles/zephyr.dir/subsys/settings/src/settings.c.obj
+2026-04-04T12:32:57.1309589Z [86/202] Building C object zephyr/CMakeFiles/zephyr.dir/subsys/fs/nvs/nvs.c.obj
+2026-04-04T12:32:57.1633375Z [87/202] Building C object zephyr/CMakeFiles/zephyr.dir/subsys/usb/device/usb_transfer.c.obj
+2026-04-04T12:32:57.2756620Z [88/202] Generating linker_zephyr_pre0.cmd
+2026-04-04T12:32:57.3203954Z [89/202] Building C object zephyr/CMakeFiles/zephyr_pre0.dir/misc/empty_file.c.obj
+2026-04-04T12:32:57.3237067Z [90/202] Building C object zephyr/CMakeFiles/zephyr.dir/subsys/settings/src/settings_line.c.obj
+2026-04-04T12:32:57.3668264Z [91/202] Building C object zephyr/CMakeFiles/zephyr.dir/subsys/settings/src/settings_init.c.obj
+2026-04-04T12:32:57.4008448Z [92/202] Building C object zephyr/CMakeFiles/zephyr.dir/subsys/settings/src/settings_nvs.c.obj
+2026-04-04T12:32:57.4445926Z [93/202] Building C object zephyr/arch/common/CMakeFiles/arch__common.dir/sw_isr_common.c.obj
+2026-04-04T12:32:57.4551400Z [94/202] Building C object zephyr/CMakeFiles/zephyr.dir/subsys/usb/device/usb_descriptor.c.obj
+2026-04-04T12:32:57.4664732Z [95/202] Building ASM object zephyr/arch/arch/arm/core/CMakeFiles/arch__arm__core.dir/nmi_on_reset.S.obj
+2026-04-04T12:32:57.5609288Z [96/202] Building C object zephyr/arch/common/CMakeFiles/isr_tables.dir/isr_tables.c.obj
+2026-04-04T12:32:57.5866466Z [97/202] Building ASM object zephyr/arch/arch/arm/core/cortex_m/CMakeFiles/arch__arm__core__cortex_m.dir/exc_exit.S.obj
+2026-04-04T12:32:57.5986932Z [98/202] Linking C static library zephyr/arch/common/libisr_tables.a
+2026-04-04T12:32:57.6298371Z [99/202] Building C object zephyr/arch/arch/arm/core/CMakeFiles/arch__arm__core.dir/tls.c.obj
+2026-04-04T12:32:57.6354895Z [100/202] Linking C static library zephyr/arch/common/libarch__common.a
+2026-04-04T12:32:57.6386917Z [101/202] Building C object zephyr/arch/arch/arm/core/CMakeFiles/arch__arm__core.dir/nmi.c.obj
+2026-04-04T12:32:57.6551555Z [102/202] Building ASM object zephyr/arch/arch/arm/core/cortex_m/CMakeFiles/arch__arm__core__cortex_m.dir/fault_s.S.obj
+2026-04-04T12:32:57.6952349Z [103/202] Building C object zephyr/arch/arch/arm/core/CMakeFiles/arch__arm__core.dir/fatal.c.obj
+2026-04-04T12:32:57.7247431Z [104/202] Linking C static library zephyr/arch/arch/arm/core/libarch__arm__core.a
+2026-04-04T12:32:57.7461383Z [105/202] Building ASM object zephyr/arch/arch/arm/core/cortex_m/CMakeFiles/arch__arm__core__cortex_m.dir/reset.S.obj
+2026-04-04T12:32:57.8109953Z [106/202] Building C object zephyr/arch/arch/arm/core/cortex_m/CMakeFiles/arch__arm__core__cortex_m.dir/fpu.c.obj
+2026-04-04T12:32:57.8965762Z [107/202] Building ASM object zephyr/arch/arch/arm/core/cortex_m/CMakeFiles/arch__arm__core__cortex_m.dir/vector_table.S.obj
+2026-04-04T12:32:57.8971571Z [108/202] Building C object zephyr/arch/arch/arm/core/cortex_m/CMakeFiles/arch__arm__core__cortex_m.dir/scb.c.obj
+2026-04-04T12:32:57.9017621Z [109/202] Building C object zephyr/arch/arch/arm/core/cortex_m/CMakeFiles/arch__arm__core__cortex_m.dir/irq_init.c.obj
+2026-04-04T12:32:57.9206635Z [110/202] Building C object zephyr/arch/arch/arm/core/cortex_m/CMakeFiles/arch__arm__core__cortex_m.dir/thread_abort.c.obj
+2026-04-04T12:32:58.0117453Z [111/202] Building C object zephyr/CMakeFiles/zephyr.dir/subsys/usb/device/usb_device.c.obj
+2026-04-04T12:32:58.0607391Z [112/202] Building ASM object zephyr/arch/arch/arm/core/cortex_m/CMakeFiles/arch__arm__core__cortex_m.dir/swap_helper.S.obj
+2026-04-04T12:32:58.0744041Z [113/202] Building C object zephyr/arch/arch/arm/core/cortex_m/CMakeFiles/arch__arm__core__cortex_m.dir/irq_manage.c.obj
+2026-04-04T12:32:58.1016762Z [114/202] Building C object zephyr/arch/arch/arm/core/cortex_m/CMakeFiles/arch__arm__core__cortex_m.dir/prep_c.c.obj
+2026-04-04T12:32:58.1143598Z [115/202] Linking C static library zephyr/libzephyr.a
+2026-04-04T12:32:58.1150577Z [116/202] Building ASM object zephyr/arch/arch/arm/core/cortex_m/CMakeFiles/arch__arm__core__cortex_m.dir/cpu_idle.S.obj
+2026-04-04T12:32:58.1368924Z [117/202] Building ASM object zephyr/arch/arch/arm/core/cortex_m/CMakeFiles/arch__arm__core__cortex_m.dir/__aeabi_read_tp.S.obj
+2026-04-04T12:32:58.1593602Z [118/202] Building C object zephyr/arch/arch/arm/core/cortex_m/CMakeFiles/arch__arm__core__cortex_m.dir/swap.c.obj
+2026-04-04T12:32:58.2463320Z [119/202] Building ASM object zephyr/arch/arch/arm/core/cortex_m/CMakeFiles/arch__arm__core__cortex_m.dir/isr_wrapper.S.obj
+2026-04-04T12:32:58.2717466Z [120/202] Building C object zephyr/arch/arch/arm/core/cortex_m/CMakeFiles/arch__arm__core__cortex_m.dir/thread.c.obj
+2026-04-04T12:32:58.3259368Z [121/202] Building C object zephyr/arch/arch/arm/core/cortex_m/CMakeFiles/arch__arm__core__cortex_m.dir/fault.c.obj
+2026-04-04T12:32:58.3518308Z [122/202] Building C object zephyr/lib/libc/picolibc/CMakeFiles/lib__libc__picolibc.dir/libc-hooks.c.obj
+2026-04-04T12:32:58.3806864Z [123/202] Linking C static library zephyr/arch/arch/arm/core/cortex_m/libarch__arm__core__cortex_m.a
+2026-04-04T12:32:58.3857158Z [124/202] Linking C static library zephyr/lib/libc/picolibc/liblib__libc__picolibc.a
+2026-04-04T12:32:58.4148946Z [125/202] Building C object zephyr/arch/arch/arm/core/mpu/CMakeFiles/arch__arm__core__mpu.dir/arm_core_mpu.c.obj
+2026-04-04T12:32:58.4619704Z [126/202] Building C object zephyr/lib/libc/common/CMakeFiles/lib__libc__common.dir/source/stdlib/abort.c.obj
+2026-04-04T12:32:58.5165112Z [127/202] Building C object zephyr/arch/arch/arm/core/mpu/CMakeFiles/arch__arm__core__mpu.dir/arm_mpu.c.obj
+2026-04-04T12:32:58.5459326Z [128/202] Building C object zephyr/soc/soc/arm/common/cortex_m/CMakeFiles/soc__arm__common__cortex_m.dir/arm_mpu_regions.c.obj
+2026-04-04T12:32:58.5502772Z [129/202] Building C object zephyr/lib/libc/common/CMakeFiles/lib__libc__common.dir/source/stdlib/malloc.c.obj
+2026-04-04T12:32:58.5515522Z [130/202] Linking C static library zephyr/arch/arch/arm/core/mpu/libarch__arm__core__mpu.a
+2026-04-04T12:32:58.5721093Z [131/202] Linking C static library zephyr/soc/soc/arm/common/cortex_m/libsoc__arm__common__cortex_m.a
+2026-04-04T12:32:58.5896927Z [132/202] Linking C static library zephyr/lib/libc/common/liblib__libc__common.a
+2026-04-04T12:32:58.7248395Z [133/202] Building C object zephyr/soc/soc/arm/nordic_nrf/nrf52/CMakeFiles/soc__arm__nordic_nrf__nrf52.dir/soc.c.obj
+2026-04-04T12:32:58.7587584Z [134/202] Linking C static library zephyr/soc/soc/arm/nordic_nrf/nrf52/libsoc__arm__nordic_nrf__nrf52.a
+2026-04-04T12:32:58.9102239Z [135/202] Building C object zephyr/drivers/flash/CMakeFiles/drivers__flash.dir/flash_page_layout.c.obj
+2026-04-04T12:32:59.0249288Z [136/202] Building C object zephyr/subsys/usb/device/class/hid/CMakeFiles/subsys__usb__device__class__hid.dir/core.c.obj
+2026-04-04T12:32:59.0417438Z [137/202] Linking C static library zephyr/subsys/usb/device/class/hid/libsubsys__usb__device__class__hid.a
+2026-04-04T12:32:59.0883415Z [138/202] Building C object zephyr/drivers/flash/CMakeFiles/drivers__flash.dir/soc_flash_nrf.c.obj
+2026-04-04T12:32:59.1203268Z [139/202] Building C object zephyr/drivers/clock_control/CMakeFiles/drivers__clock_control.dir/clock_control_nrf.c.obj
+2026-04-04T12:32:59.1205285Z [140/202] Building C object zephyr/drivers/flash/CMakeFiles/drivers__flash.dir/jesd216.c.obj
+2026-04-04T12:32:59.1538473Z [141/202] Linking C static library zephyr/drivers/clock_control/libdrivers__clock_control.a
+2026-04-04T12:32:59.2583965Z [142/202] Building C object zephyr/drivers/hwinfo/CMakeFiles/drivers__hwinfo.dir/hwinfo_weak_impl.c.obj
+2026-04-04T12:32:59.3719921Z [143/202] Building C object zephyr/drivers/pinctrl/CMakeFiles/drivers__pinctrl.dir/common.c.obj
+2026-04-04T12:32:59.4981408Z [144/202] Building C object zephyr/drivers/kscan/CMakeFiles/drivers__kscan.dir/tmp/zmk-config/zmk/app/module/drivers/kscan/kscan_mock.c.obj
+2026-04-04T12:32:59.5322011Z [145/202] Linking C static library zephyr/drivers/kscan/libdrivers__kscan.a
+2026-04-04T12:32:59.6679565Z [146/202] Building C object zephyr/drivers/flash/CMakeFiles/drivers__flash.dir/nrf_qspi_nor.c.obj
+2026-04-04T12:32:59.7084083Z [147/202] Linking C static library zephyr/drivers/flash/libdrivers__flash.a
+2026-04-04T12:32:59.7351579Z [148/202] Building C object zephyr/drivers/timer/CMakeFiles/drivers__timer.dir/sys_clock_init.c.obj
+2026-04-04T12:32:59.7837869Z [149/202] Building C object zephyr/drivers/hwinfo/CMakeFiles/drivers__hwinfo.dir/hwinfo_nrf.c.obj
+2026-04-04T12:32:59.8155589Z [150/202] Linking C static library zephyr/drivers/hwinfo/libdrivers__hwinfo.a
+2026-04-04T12:32:59.8616823Z [151/202] Building C object modules/hal_nordic/nrfx/CMakeFiles/modules__hal_nordic__nrfx.dir/tmp/zmk-config/modules/hal/nordic/nrfx/mdk/system_nrf52840.c.obj
+2026-04-04T12:32:59.9237090Z [152/202] Building C object zephyr/drivers/pinctrl/CMakeFiles/drivers__pinctrl.dir/pinctrl_nrf.c.obj
+2026-04-04T12:32:59.9564625Z [153/202] Linking C static library zephyr/drivers/pinctrl/libdrivers__pinctrl.a
+2026-04-04T12:32:59.9957752Z [154/202] Building C object zephyr/drivers/gpio/CMakeFiles/drivers__gpio.dir/gpio_nrfx.c.obj
+2026-04-04T12:33:00.0011338Z [155/202] Building C object modules/hal_nordic/nrfx/CMakeFiles/modules__hal_nordic__nrfx.dir/nrfx_glue.c.obj
+2026-04-04T12:33:00.0353725Z [156/202] Linking C static library zephyr/drivers/gpio/libdrivers__gpio.a
+2026-04-04T12:33:00.0706580Z [157/202] Building C object modules/hal_nordic/nrfx/CMakeFiles/modules__hal_nordic__nrfx.dir/tmp/zmk-config/modules/hal/nordic/nrfx/helpers/nrfx_flag32_allocator.c.obj
+2026-04-04T12:33:00.0725795Z [158/202] Building C object zephyr/drivers/timer/CMakeFiles/drivers__timer.dir/nrf_rtc_timer.c.obj
+2026-04-04T12:33:00.0945645Z [159/202] Linking C static library zephyr/drivers/timer/libdrivers__timer.a
+2026-04-04T12:33:00.1761935Z [160/202] Building C object zephyr/drivers/usb/device/CMakeFiles/drivers__usb__device.dir/usb_dc_nrfx.c.obj
+2026-04-04T12:33:00.1937131Z [161/202] Linking C static library zephyr/drivers/usb/device/libdrivers__usb__device.a
+2026-04-04T12:33:00.4877236Z [162/202] Building C object modules/hal_nordic/nrfx/CMakeFiles/modules__hal_nordic__nrfx.dir/tmp/zmk-config/modules/hal/nordic/nrfx/drivers/src/nrfx_nvmc.c.obj
+2026-04-04T12:33:00.4963930Z [163/202] Building C object modules/hal_nordic/nrfx/CMakeFiles/modules__hal_nordic__nrfx.dir/tmp/zmk-config/modules/hal/nordic/nrfx/drivers/src/nrfx_clock.c.obj
+2026-04-04T12:33:00.5135765Z [164/202] Building C object modules/hal_nordic/nrfx/CMakeFiles/modules__hal_nordic__nrfx.dir/tmp/zmk-config/modules/hal/nordic/nrfx/drivers/src/nrfx_power.c.obj
+2026-04-04T12:33:00.7288833Z [165/202] Building C object zephyr/kernel/CMakeFiles/kernel.dir/busy_wait.c.obj
+2026-04-04T12:33:00.7492449Z [166/202] Building C object zephyr/kernel/CMakeFiles/kernel.dir/main_weak.c.obj
+2026-04-04T12:33:00.7729608Z [167/202] Building C object zephyr/kernel/CMakeFiles/kernel.dir/banner.c.obj
+2026-04-04T12:33:00.8481749Z [168/202] Building C object modules/hal_nordic/nrfx/CMakeFiles/modules__hal_nordic__nrfx.dir/tmp/zmk-config/modules/hal/nordic/nrfx/drivers/src/nrfx_qspi.c.obj
+2026-04-04T12:33:00.9286690Z [169/202] Building C object zephyr/kernel/CMakeFiles/kernel.dir/device.c.obj
+2026-04-04T12:33:00.9324912Z [170/202] Building C object zephyr/kernel/CMakeFiles/kernel.dir/errno.c.obj
+2026-04-04T12:33:01.1544723Z [171/202] Building C object zephyr/kernel/CMakeFiles/kernel.dir/init.c.obj
+2026-04-04T12:33:01.1651000Z [172/202] Building C object zephyr/kernel/CMakeFiles/kernel.dir/fatal.c.obj
+2026-04-04T12:33:01.2226791Z [173/202] Building C object zephyr/kernel/CMakeFiles/kernel.dir/version.c.obj
+2026-04-04T12:33:01.2362635Z [174/202] Building C object zephyr/kernel/CMakeFiles/kernel.dir/kheap.c.obj
+2026-04-04T12:33:01.2448700Z [175/202] Building C object zephyr/kernel/CMakeFiles/kernel.dir/mem_slab.c.obj
+2026-04-04T12:33:01.2588146Z [176/202] Building C object modules/hal_nordic/nrfx/CMakeFiles/modules__hal_nordic__nrfx.dir/tmp/zmk-config/modules/hal/nordic/nrfx/drivers/src/nrfx_usbd.c.obj
+2026-04-04T12:33:01.5016992Z [177/202] Building C object zephyr/kernel/CMakeFiles/kernel.dir/mailbox.c.obj
+2026-04-04T12:33:01.5478147Z [178/202] Building C object zephyr/kernel/CMakeFiles/kernel.dir/idle.c.obj
+2026-04-04T12:33:01.5484077Z [179/202] Building C object zephyr/kernel/CMakeFiles/kernel.dir/msg_q.c.obj
+2026-04-04T12:33:01.6121713Z [180/202] Building C object zephyr/kernel/CMakeFiles/kernel.dir/thread.c.obj
+2026-04-04T12:33:01.8195875Z [181/202] Building C object zephyr/kernel/CMakeFiles/kernel.dir/sem.c.obj
+2026-04-04T12:33:01.8272821Z [182/202] Building C object zephyr/kernel/CMakeFiles/kernel.dir/queue.c.obj
+2026-04-04T12:33:01.8694456Z [183/202] Building C object zephyr/kernel/CMakeFiles/kernel.dir/mutex.c.obj
+2026-04-04T12:33:01.9078201Z [184/202] Building C object zephyr/kernel/CMakeFiles/kernel.dir/stack.c.obj
+2026-04-04T12:33:01.9227131Z [185/202] Building C object zephyr/kernel/CMakeFiles/kernel.dir/system_work_q.c.obj
+2026-04-04T12:33:01.9389769Z [186/202] Building C object modules/hal_nordic/nrfx/CMakeFiles/modules__hal_nordic__nrfx.dir/tmp/zmk-config/modules/hal/nordic/nrfx/drivers/src/nrfx_gpiote.c.obj
+2026-04-04T12:33:01.9892083Z [187/202] Linking C static library modules/hal_nordic/nrfx/libmodules__hal_nordic__nrfx.a
+2026-04-04T12:33:02.0632331Z [188/202] Building C object zephyr/kernel/CMakeFiles/kernel.dir/xip.c.obj
+2026-04-04T12:33:02.1906713Z [189/202] Building C object zephyr/kernel/CMakeFiles/kernel.dir/condvar.c.obj
+2026-04-04T12:33:02.2304021Z [190/202] Building C object zephyr/kernel/CMakeFiles/kernel.dir/mempool.c.obj
+2026-04-04T12:33:02.2716791Z [191/202] Building C object zephyr/kernel/CMakeFiles/kernel.dir/timer.c.obj
+2026-04-04T12:33:02.2922132Z [192/202] Building C object zephyr/kernel/CMakeFiles/kernel.dir/work.c.obj
+2026-04-04T12:33:02.3186366Z [193/202] Building C object zephyr/kernel/CMakeFiles/kernel.dir/timeout.c.obj
+2026-04-04T12:33:02.3441062Z [194/202] Building C object zephyr/kernel/CMakeFiles/kernel.dir/dynamic_disabled.c.obj
+2026-04-04T12:33:02.4775634Z [195/202] Building C object zephyr/kernel/CMakeFiles/kernel.dir/sched.c.obj
+2026-04-04T12:33:02.5031880Z [196/202] Linking C static library zephyr/kernel/libkernel.a
+2026-04-04T12:33:02.5855830Z [197/202] Linking C executable zephyr/zephyr_pre0.elf
+2026-04-04T12:33:02.6206218Z [198/202] Generating linker.cmd
+2026-04-04T12:33:02.7820692Z [199/202] Generating isr_tables.c, isrList.bin
+2026-04-04T12:33:02.7964576Z [200/202] Building C object zephyr/CMakeFiles/zephyr_final.dir/misc/empty_file.c.obj
+2026-04-04T12:33:02.8571946Z [201/202] Building C object zephyr/CMakeFiles/zephyr_final.dir/isr_tables.c.obj
+2026-04-04T12:33:03.2725456Z [202/202] Linking C executable zephyr/zmk.elf
+2026-04-04T12:33:03.2727500Z Memory region         Used Size  Region Size  %age Used
+2026-04-04T12:33:03.2729013Z            FLASH:       49608 B       788 KB      6.15%
+2026-04-04T12:33:03.2729867Z              RAM:       11648 B       256 KB      4.44%
+2026-04-04T12:33:03.2731133Z         IDT_LIST:          0 GB         2 KB      0.00%
+2026-04-04T12:33:03.2731729Z Converted to uf2, output size: 99328, start address: 0x27000
+2026-04-04T12:33:03.2732226Z Wrote 99328 bytes to zmk.uf2

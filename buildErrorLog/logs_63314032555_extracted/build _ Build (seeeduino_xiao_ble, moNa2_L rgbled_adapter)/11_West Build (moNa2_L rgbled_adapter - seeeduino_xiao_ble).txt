@@ -1,0 +1,88 @@
+﻿2026-04-04T12:32:38.2328172Z ##[group]Run west build -s zmk/app -d "/tmp/tmp.11ueOr35xV" -b "seeeduino_xiao_ble"  -- -DZMK_CONFIG=/tmp/zmk-config/config -DSHIELD="moNa2_L rgbled_adapter" -DZMK_EXTRA_MODULES='/__w/zmk-config-moNa2/zmk-config-moNa2' 
+2026-04-04T12:32:38.2329612Z [36;1mwest build -s zmk/app -d "/tmp/tmp.11ueOr35xV" -b "seeeduino_xiao_ble"  -- -DZMK_CONFIG=/tmp/zmk-config/config -DSHIELD="moNa2_L rgbled_adapter" -DZMK_EXTRA_MODULES='/__w/zmk-config-moNa2/zmk-config-moNa2' [0m
+2026-04-04T12:32:38.2330497Z shell: sh -x {0}
+2026-04-04T12:32:38.2330685Z env:
+2026-04-04T12:32:38.2330857Z   build_dir: /tmp/tmp.11ueOr35xV
+2026-04-04T12:32:38.2331091Z   base_dir: /tmp/zmk-config
+2026-04-04T12:32:38.2331304Z   zephyr_version: 4.1.0
+2026-04-04T12:32:38.2331493Z   extra_west_args: 
+2026-04-04T12:32:38.2331908Z   extra_cmake_args: -DSHIELD="moNa2_L rgbled_adapter" -DZMK_EXTRA_MODULES='/__w/zmk-config-moNa2/zmk-config-moNa2'
+2026-04-04T12:32:38.2332446Z   display_name: moNa2_L rgbled_adapter - seeeduino_xiao_ble
+2026-04-04T12:32:38.2332841Z   artifact_name: moNa2_L rgbled_adapter-seeeduino_xiao_ble-zmk
+2026-04-04T12:32:38.2333148Z ##[endgroup]
+2026-04-04T12:32:38.2818810Z + west build -s zmk/app -d /tmp/tmp.11ueOr35xV -b seeeduino_xiao_ble -- -DZMK_CONFIG=/tmp/zmk-config/config -DSHIELD=moNa2_L rgbled_adapter -DZMK_EXTRA_MODULES=/__w/zmk-config-moNa2/zmk-config-moNa2
+2026-04-04T12:32:38.4825873Z -- west build: generating a build system
+2026-04-04T12:32:38.7617498Z Loading Zephyr default modules (Zephyr base).
+2026-04-04T12:32:38.7619443Z -- Application: /tmp/zmk-config/zmk/app
+2026-04-04T12:32:38.7619938Z -- CMake version: 3.31.6
+2026-04-04T12:32:38.8713505Z -- Found Python3: /usr/bin/python3 (found suitable version "3.12.3", minimum required is "3.8") found components: Interpreter
+2026-04-04T12:32:38.8832231Z -- Cache files will be written to: /tmp/zmk-config/zephyr/.cache
+2026-04-04T12:32:38.8891813Z -- Zephyr version: 3.5.0 (/tmp/zmk-config/zephyr)
+2026-04-04T12:32:38.9527708Z -- Found west (found suitable version "1.5.0", minimum required is "0.14.0")
+2026-04-04T12:32:39.4528785Z CMake Deprecation Warning at keymap-module/modules/modules.cmake:53 (message):
+2026-04-04T12:32:39.4529729Z -- Adding ZMK config directory as board root: /tmp/zmk-config/config
+2026-04-04T12:32:39.4530631Z   The `config/boards` folder is deprecated.  Please use a module instead.
+2026-04-04T12:32:39.4531573Z   See https://zmk.dev/docs/development/hardware-integration/new-shield and
+2026-04-04T12:32:39.4534413Z   https://zmk.dev/docs/development/module-creation for more information.
+2026-04-04T12:32:39.4535124Z Call Stack (most recent call first):
+2026-04-04T12:32:39.4535759Z   /tmp/zmk-config/zephyr/cmake/modules/zephyr_module.cmake:130 (include)
+2026-04-04T12:32:39.4536540Z   /tmp/zmk-config/zephyr/cmake/modules/zephyr_default.cmake:129 (include)
+2026-04-04T12:32:39.4537379Z   /tmp/zmk-config/zephyr/share/zephyr-package/cmake/ZephyrConfig.cmake:66 (include)
+2026-04-04T12:32:39.4538537Z   /tmp/zmk-config/zephyr/share/zephyr-package/cmake/ZephyrConfig.cmake:92 (include_boilerplate)
+2026-04-04T12:32:39.4539350Z   CMakeLists.txt:9 (find_package)
+2026-04-04T12:32:39.4539629Z 
+2026-04-04T12:32:39.4539637Z 
+2026-04-04T12:32:39.4539945Z -- Adding /tmp/zmk-config/zmk-rgbled-widget/boards/shields/rgbled_adapter
+2026-04-04T12:32:39.4678555Z -- Adding /tmp/zmk-config/config/boards/shields/moNa2
+2026-04-04T12:32:39.4680320Z -- ZMK Config directory: /tmp/zmk-config/config
+2026-04-04T12:32:39.4684132Z -- Using keymap file: /tmp/zmk-config/config/moNa2.keymap
+2026-04-04T12:32:39.4757443Z CMake Warning at /tmp/zmk-config/zephyr/cmake/modules/boards.cmake:92 (message):
+2026-04-04T12:32:39.4758193Z   BOARD_ROOT element without a 'boards' subdirectory:
+2026-04-04T12:32:39.4758527Z 
+2026-04-04T12:32:39.4758632Z   /__w/zmk-config-moNa2/zmk-config-moNa2
+2026-04-04T12:32:39.4758826Z 
+2026-04-04T12:32:39.4758897Z   Hints:
+2026-04-04T12:32:39.4758997Z 
+2026-04-04T12:32:39.4759392Z     - if your board directory is '/foo/bar/boards/<ARCH>/my_board' then add '/foo/bar' to BOARD_ROOT, not the entire board directory
+2026-04-04T12:32:39.4760322Z     - if in doubt, use absolute paths
+2026-04-04T12:32:39.4760591Z Call Stack (most recent call first):
+2026-04-04T12:32:39.4760955Z   /tmp/zmk-config/zephyr/cmake/modules/zephyr_default.cmake:129 (include)
+2026-04-04T12:32:39.4761472Z   /tmp/zmk-config/zephyr/share/zephyr-package/cmake/ZephyrConfig.cmake:66 (include)
+2026-04-04T12:32:39.4762066Z   /tmp/zmk-config/zephyr/share/zephyr-package/cmake/ZephyrConfig.cmake:92 (include_boilerplate)
+2026-04-04T12:32:39.4762530Z   CMakeLists.txt:9 (find_package)
+2026-04-04T12:32:39.4762697Z 
+2026-04-04T12:32:39.4762702Z 
+2026-04-04T12:32:39.4837901Z -- Board: seeeduino_xiao_ble
+2026-04-04T12:32:39.4874925Z -- Shield(s): moNa2_L rgbled_adapter
+2026-04-04T12:32:39.6343354Z -- ZEPHYR_TOOLCHAIN_VARIANT not set, trying to locate Zephyr SDK
+2026-04-04T12:32:39.6366641Z -- Found host-tools: zephyr 0.16.9 (/opt/zephyr-sdk-0.16.9)
+2026-04-04T12:32:39.6374242Z -- Found toolchain: zephyr 0.16.9 (/opt/zephyr-sdk-0.16.9)
+2026-04-04T12:32:39.6410831Z -- Found Dtc: /opt/zephyr-sdk-0.16.9/sysroots/x86_64-pokysdk-linux/usr/bin/dtc (found suitable version "1.6.0", minimum required is "1.4.6")
+2026-04-04T12:32:39.6414910Z -- Found BOARD.dts: /tmp/zmk-config/zephyr/boards/arm/seeeduino_xiao_ble/seeeduino_xiao_ble.dts
+2026-04-04T12:32:39.6415991Z -- Found devicetree overlay: /tmp/zmk-config/zmk/app/boards/seeeduino_xiao_ble.overlay
+2026-04-04T12:32:39.6417145Z -- Found devicetree overlay: /tmp/zmk-config/config/boards/shields/moNa2/moNa2_L.overlay
+2026-04-04T12:32:39.6418366Z -- Found devicetree overlay: /tmp/zmk-config/zmk-rgbled-widget/boards/shields/rgbled_adapter/rgbled_adapter.overlay
+2026-04-04T12:32:39.6419178Z -- Found devicetree overlay: /tmp/zmk-config/zmk-rgbled-widget/boards/shields/rgbled_adapter/boards/seeeduino_xiao_ble.overlay
+2026-04-04T12:32:39.6419811Z -- Found devicetree overlay: /tmp/zmk-config/config/moNa2.keymap
+2026-04-04T12:32:39.6796555Z In file included from <command-line>:
+2026-04-04T12:32:39.6797801Z /tmp/zmk-config/config/moNa2.keymap:7: warning: "ZMK_POINTING_DEFAULT_SCRL_VAL" redefined
+2026-04-04T12:32:39.6798468Z     7 | #define ZMK_POINTING_DEFAULT_SCRL_VAL 100
+2026-04-04T12:32:39.6798842Z       | 
+2026-04-04T12:32:39.6799169Z In file included from /tmp/zmk-config/config/moNa2.keymap:5:
+2026-04-04T12:32:39.6799956Z /tmp/zmk-config/zmk/app/include/dt-bindings/zmk/pointing.h:31: note: this is the location of the previous definition
+2026-04-04T12:32:39.6800673Z    31 | #define ZMK_POINTING_DEFAULT_SCRL_VAL 10
+2026-04-04T12:32:39.6801032Z       | 
+2026-04-04T12:32:39.7956792Z devicetree error: /mkp_input_listener: undefined node label 'mouse_runtime_input_processor'
+2026-04-04T12:32:39.8063776Z CMake Error at /tmp/zmk-config/zephyr/cmake/modules/dts.cmake:279 (message):
+2026-04-04T12:32:39.8067594Z -- In: /tmp/tmp.11ueOr35xV/zephyr, command: /usr/bin/python3;/tmp/zmk-config/zephyr/scripts/dts/gen_defines.py;--dts;/tmp/tmp.11ueOr35xV/zephyr/zephyr.dts.pre;--dtc-flags;'';--bindings-dirs;/tmp/zmk-config/zmk-pmw3610-driver/dts/bindings;/tmp/zmk-config/zmk-rgbled-widget/dts/bindings;/tmp/zmk-config/zmk-module-battery-history/dts/bindings;/tmp/zmk-config/zmk-module-runtime-input-processor/dts/bindings;/tmp/zmk-config/zmk/app/module/dts/bindings;/tmp/zmk-config/zmk/app/dts/bindings;/tmp/zmk-config/zephyr/dts/bindings;--header-out;/tmp/tmp.11ueOr35xV/zephyr/include/generated/devicetree_generated.h.new;--dts-out;/tmp/tmp.11ueOr35xV/zephyr/zephyr.dts.new;--edt-pickle-out;/tmp/tmp.11ueOr35xV/zephyr/edt.pickle;--vendor-prefixes;/tmp/zmk-config/zmk/app/dts/bindings/vendor-prefixes.txt;--vendor-prefixes;/tmp/zmk-config/zephyr/dts/bindings/vendor-prefixes.txt
+2026-04-04T12:32:39.8071447Z   gen_defines.py failed with return code: 1
+2026-04-04T12:32:39.8071745Z Call Stack (most recent call first):
+2026-04-04T12:32:39.8072106Z   /tmp/zmk-config/zephyr/cmake/modules/zephyr_default.cmake:129 (include)
+2026-04-04T12:32:39.8072611Z   /tmp/zmk-config/zephyr/share/zephyr-package/cmake/ZephyrConfig.cmake:66 (include)
+2026-04-04T12:32:39.8073191Z   /tmp/zmk-config/zephyr/share/zephyr-package/cmake/ZephyrConfig.cmake:92 (include_boilerplate)
+2026-04-04T12:32:39.8073947Z   CMakeLists.txt:9 (find_package)
+2026-04-04T12:32:39.8074107Z 
+2026-04-04T12:32:39.8074112Z 
+2026-04-04T12:32:39.8074231Z -- Configuring incomplete, errors occurred!
+2026-04-04T12:32:39.8095386Z FATAL ERROR: command exited with status 1: /usr/local/bin/cmake -DWEST_PYTHON=/usr/bin/python3 -B/tmp/tmp.11ueOr35xV -GNinja -DBOARD=seeeduino_xiao_ble -DZMK_CONFIG=/tmp/zmk-config/config '-DSHIELD=moNa2_L rgbled_adapter' -DZMK_EXTRA_MODULES=/__w/zmk-config-moNa2/zmk-config-moNa2 -S/tmp/zmk-config/zmk/app
+2026-04-04T12:32:39.8348037Z ##[error]Process completed with exit code 1.

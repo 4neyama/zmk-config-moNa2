@@ -1,0 +1,146 @@
+﻿2026-04-04T12:32:38.4296380Z ##[group]Run west update
+2026-04-04T12:32:38.4296672Z [36;1mwest update[0m
+2026-04-04T12:32:38.4296971Z shell: sh -e {0}
+2026-04-04T12:32:38.4297191Z env:
+2026-04-04T12:32:38.4297376Z   build_dir: /tmp/tmp.mfYTQzOaHL
+2026-04-04T12:32:38.4297612Z   base_dir: /tmp/zmk-config
+2026-04-04T12:32:38.4297836Z   zephyr_version: 4.1.0
+2026-04-04T12:32:38.4298042Z   extra_west_args: 
+2026-04-04T12:32:38.4298449Z   extra_cmake_args: -DSHIELD="settings_reset" -DZMK_EXTRA_MODULES='/__w/zmk-config-moNa2/zmk-config-moNa2'
+2026-04-04T12:32:38.4298982Z   display_name: settings_reset - seeeduino_xiao_ble
+2026-04-04T12:32:38.4299321Z   artifact_name: settings_reset-seeeduino_xiao_ble-zmk
+2026-04-04T12:32:38.4299604Z ##[endgroup]
+2026-04-04T12:32:38.6894153Z === updating zmk (zmk):
+2026-04-04T12:32:38.6922993Z --- zmk: fetching, need revision v0.3-branch+dya
+2026-04-04T12:32:38.8818970Z From https://github.com/cormoran/zmk
+2026-04-04T12:32:38.8819683Z  * branch              v0.3-branch+dya -> FETCH_HEAD
+2026-04-04T12:32:39.0419203Z HEAD is now at e5397fd8 fix(studio): Fix max available BLE profile in behavior meta
+2026-04-04T12:32:39.0551739Z === updating zephyr (zephyr):
+2026-04-04T12:32:39.0583095Z --- zephyr: fetching, need revision v3.5.0+zmk-fixes
+2026-04-04T12:32:39.4751783Z From https://github.com/zmkfirmware/zephyr
+2026-04-04T12:32:39.4752390Z  * branch                v3.5.0+zmk-fixes -> FETCH_HEAD
+2026-04-04T12:32:40.6039377Z HEAD is now at dacab4875 scripts: check_init_priorities: drop recursive child parsing
+2026-04-04T12:32:40.6428132Z === updating zmk-pmw3610-driver (zmk-pmw3610-driver):
+2026-04-04T12:32:40.6428870Z --- zmk-pmw3610-driver: initializing
+2026-04-04T12:32:40.6473900Z Initialized empty Git repository in /tmp/zmk-config/zmk-pmw3610-driver/.git/
+2026-04-04T12:32:40.6505720Z --- zmk-pmw3610-driver: fetching, need revision main
+2026-04-04T12:32:40.8951122Z From https://github.com/sayu-hub/zmk-pmw3610-driver
+2026-04-04T12:32:40.8951781Z  * branch            main       -> FETCH_HEAD
+2026-04-04T12:32:40.9064212Z HEAD is now at 2618e85 Update CMakeLists.txt
+2026-04-04T12:32:40.9114409Z HEAD is now at 2618e85 Update CMakeLists.txt
+2026-04-04T12:32:40.9118733Z === updating zmk-rgbled-widget (zmk-rgbled-widget):
+2026-04-04T12:32:40.9119313Z --- zmk-rgbled-widget: initializing
+2026-04-04T12:32:40.9150617Z Initialized empty Git repository in /tmp/zmk-config/zmk-rgbled-widget/.git/
+2026-04-04T12:32:40.9182719Z --- zmk-rgbled-widget: fetching, need revision v0.3-branch
+2026-04-04T12:32:41.1826050Z From https://github.com/caksoylar/zmk-rgbled-widget
+2026-04-04T12:32:41.1826672Z  * branch            v0.3-branch -> FETCH_HEAD
+2026-04-04T12:32:41.1827428Z  * [new tag]         v0.3       -> v0.3
+2026-04-04T12:32:41.1827995Z  * [new tag]         v0.3.0     -> v0.3.0
+2026-04-04T12:32:41.1946953Z HEAD is now at 8756cb7 Update install instructions for ZMK version
+2026-04-04T12:32:41.1997821Z HEAD is now at 8756cb7 Update install instructions for ZMK version
+2026-04-04T12:32:41.2001710Z === updating zmk-module-ble-management (zmk-module-ble-management):
+2026-04-04T12:32:41.2002427Z --- zmk-module-ble-management: initializing
+2026-04-04T12:32:41.2036020Z Initialized empty Git repository in /tmp/zmk-config/zmk-module-ble-management/.git/
+2026-04-04T12:32:41.2067318Z --- zmk-module-ble-management: fetching, need revision main
+2026-04-04T12:32:41.5171702Z From https://github.com/cormoran/zmk-module-ble-management
+2026-04-04T12:32:41.5172458Z  * branch            main       -> FETCH_HEAD
+2026-04-04T12:32:41.5342523Z HEAD is now at 851661c Merge pull request #5 from cormoran/setting_bug
+2026-04-04T12:32:41.5415641Z HEAD is now at 851661c Merge pull request #5 from cormoran/setting_bug
+2026-04-04T12:32:41.5419565Z === updating zmk-module-battery-history (zmk-module-battery-history):
+2026-04-04T12:32:41.5420529Z --- zmk-module-battery-history: initializing
+2026-04-04T12:32:41.5452350Z Initialized empty Git repository in /tmp/zmk-config/zmk-module-battery-history/.git/
+2026-04-04T12:32:41.5484140Z --- zmk-module-battery-history: fetching, need revision main
+2026-04-04T12:32:41.8969331Z From https://github.com/cormoran/zmk-module-battery-history
+2026-04-04T12:32:41.8969958Z  * branch            main       -> FETCH_HEAD
+2026-04-04T12:32:41.9155589Z HEAD is now at 307755d Add display-name for behavior
+2026-04-04T12:32:41.9229669Z HEAD is now at 307755d Add display-name for behavior
+2026-04-04T12:32:41.9234145Z === updating zmk-module-settings-rpc (zmk-module-settings-rpc):
+2026-04-04T12:32:41.9234928Z --- zmk-module-settings-rpc: initializing
+2026-04-04T12:32:41.9268175Z Initialized empty Git repository in /tmp/zmk-config/zmk-module-settings-rpc/.git/
+2026-04-04T12:32:41.9300053Z --- zmk-module-settings-rpc: fetching, need revision main
+2026-04-04T12:32:42.2291685Z From https://github.com/cormoran/zmk-module-settings-rpc
+2026-04-04T12:32:42.2292317Z  * branch            main       -> FETCH_HEAD
+2026-04-04T12:32:42.2467102Z HEAD is now at ad1c995 Merge pull request #4 from cormoran/fix-module-name
+2026-04-04T12:32:42.2539022Z HEAD is now at ad1c995 Merge pull request #4 from cormoran/fix-module-name
+2026-04-04T12:32:42.2542988Z === updating zmk-module-runtime-input-processor (zmk-module-runtime-input-processor):
+2026-04-04T12:32:42.2543775Z --- zmk-module-runtime-input-processor: initializing
+2026-04-04T12:32:42.2576326Z Initialized empty Git repository in /tmp/zmk-config/zmk-module-runtime-input-processor/.git/
+2026-04-04T12:32:42.2607418Z --- zmk-module-runtime-input-processor: fetching, need revision main
+2026-04-04T12:32:42.6328099Z From https://github.com/cormoran/zmk-module-runtime-input-processor
+2026-04-04T12:32:42.6328626Z  * branch            main       -> FETCH_HEAD
+2026-04-04T12:32:42.6507949Z HEAD is now at dbf92f7 Merge pull request #17 from cormoran/behaivor-meta
+2026-04-04T12:32:42.6584516Z HEAD is now at dbf92f7 Merge pull request #17 from cormoran/behaivor-meta
+2026-04-04T12:32:42.6588274Z === updating nanopb (modules/lib/nanopb):
+2026-04-04T12:32:42.6910656Z HEAD is now at 8c60555 Merge pull request #4 from petejohanson/build/find-protoc-fixes
+2026-04-04T12:32:42.6914994Z === updating zmk-studio-messages (modules/msgs/zmk-studio-messages):
+2026-04-04T12:32:42.7043351Z HEAD is now at 89b81d2 Add custom subsystem protocol
+2026-04-04T12:32:42.7047372Z === updating acpica (modules/lib/acpica):
+2026-04-04T12:32:42.8928101Z HEAD is now at 0333c2af1 os_specific: zephyr: add generic platform support
+2026-04-04T12:32:42.8934399Z === updating canopennode (modules/lib/canopennode):
+2026-04-04T12:32:42.9108619Z HEAD is now at dec12fa stack: map CANopenNode crc16_ccitt() to Zephyr crc16_itu_t()
+2026-04-04T12:32:42.9111976Z === updating cmsis (modules/hal/cmsis):
+2026-04-04T12:32:42.9323211Z HEAD is now at 5a00331 remove cmsis-dsp and cmsis-nn
+2026-04-04T12:32:42.9326920Z === updating cmsis-dsp (modules/lib/cmsis-dsp):
+2026-04-04T12:32:43.2589474Z HEAD is now at ff7b5fd1 compute Library: fix inline function that is not static
+2026-04-04T12:32:43.2595134Z === updating cmsis-nn (modules/lib/cmsis-nn):
+2026-04-04T12:32:43.3151146Z HEAD is now at 0c8669d Merge pull request #1 from XenuIsWatching/zephyr
+2026-04-04T12:32:43.3154683Z === updating fatfs (modules/fs/fatfs):
+2026-04-04T12:32:43.3347944Z HEAD is now at 427159b zephyr: fix ffconf.h override use of STRINGIZE
+2026-04-04T12:32:43.3351904Z === updating hal_ambiq (modules/hal/ambiq):
+2026-04-04T12:32:43.4002006Z HEAD is now at 0a7c993 modules: hal_ambiq: Add Ambiq Apollo4 Blue Plus SoC
+2026-04-04T12:32:43.4005689Z === updating hal_atmel (modules/hal/atmel):
+2026-04-04T12:32:43.6807739Z HEAD is now at 5ab4300 Remove LITTLE_ENDIAN and __LITTLE_ENDIAN defines
+2026-04-04T12:32:43.6813314Z === updating hal_espressif (modules/hal/espressif):
+2026-04-04T12:32:44.4361769Z HEAD is now at 31fc5758f3 random: rename header file as in Zephyr.
+2026-04-04T12:32:44.4369974Z === updating hal_ethos_u (modules/hal/ethos_u):
+2026-04-04T12:32:44.4546696Z HEAD is now at 90ada2e Clarify README regarding CPU choice
+2026-04-04T12:32:44.4550691Z === updating hal_gigadevice (modules/hal/gigadevice):
+2026-04-04T12:32:44.5142123Z HEAD is now at 2994b7d README.md: add pllmf and pack exception for gd32a50x
+2026-04-04T12:32:44.5146321Z === updating hal_intel (modules/hal/intel):
+2026-04-04T12:32:44.5308339Z HEAD is now at b3b43d4 pm: fix handling reset prep in incorrect place
+2026-04-04T12:32:44.5312531Z === updating hal_nordic (modules/hal/nordic):
+2026-04-04T12:32:45.1783690Z HEAD is now at 884c4d6 nrfx: Update to version 3.6.0
+2026-04-04T12:32:45.1788439Z === updating hal_nuvoton (modules/hal/nuvoton):
+2026-04-04T12:32:45.2359862Z HEAD is now at 3e0a4c4 hal: NuMaker M46x: revise API name of M460 FMC erase bank
+2026-04-04T12:32:45.2364126Z === updating hal_quicklogic (modules/hal/quicklogic):
+2026-04-04T12:32:45.2506452Z HEAD is now at b3a66fe Remove references to FPGA IP core drivers
+2026-04-04T12:32:45.2509622Z === updating hal_renesas (modules/hal/renesas):
+2026-04-04T12:32:45.2669825Z HEAD is now at a6cf2af Remove dynamic memory allocation from PD code
+2026-04-04T12:32:45.2673697Z === updating hal_rpi_pico (modules/hal/rpi_pico):
+2026-04-04T12:32:45.3142492Z HEAD is now at fba7162 Merge pull request #5 from soburi/zephyr_timer_modification
+2026-04-04T12:32:45.3146567Z === updating hal_stm32 (modules/hal/stm32):
+2026-04-04T12:32:47.0037673Z HEAD is now at 89ef0a33 stm32cube: stm32h5:  ethernet: PTP clock doesn’t works
+2026-04-04T12:32:47.0043487Z === updating hal_telink (modules/hal/telink):
+2026-04-04T12:32:47.0230317Z HEAD is now at 38573af B91 ADC driver support
+2026-04-04T12:32:47.0234749Z === updating hal_wurthelektronik (modules/hal/wurthelektronik):
+2026-04-04T12:32:47.0371314Z HEAD is now at 24ca987 Initialized WE HAL module repository.
+2026-04-04T12:32:47.0375240Z === updating libmetal (modules/hal/libmetal):
+2026-04-04T12:32:47.0552925Z HEAD is now at b91611a lib: update libmetal to release v2023.04.0
+2026-04-04T12:32:47.0556700Z === updating liblc3 (modules/lib/liblc3):
+2026-04-04T12:32:47.0727951Z HEAD is now at 448f3de Merge pull request #8 from carlescufi/rename
+2026-04-04T12:32:47.0731546Z === updating littlefs (modules/fs/littlefs):
+2026-04-04T12:32:47.0884630Z HEAD is now at ca583fd Merge tag 'v2.5.0' of https://github.com/littlefs-project/littlefs into zephyr
+2026-04-04T12:32:47.0888572Z === updating lvgl (modules/lib/gui/lvgl):
+2026-04-04T12:32:47.3772016Z HEAD is now at 8a6a2d1d2 zephyr: Move gluecode back to zephyr main repository
+2026-04-04T12:32:47.3777760Z === updating mbedtls (modules/crypto/mbedtls):
+2026-04-04T12:32:47.5189159Z HEAD is now at c38dc78d9 Merge pull request #44 from d3zd3z/zephyr-3.4.0
+2026-04-04T12:32:47.5194591Z === updating mipi-sys-t (modules/debug/mipi-sys-t):
+2026-04-04T12:32:47.5384748Z HEAD is now at a819419 library: allow building without wchar support
+2026-04-04T12:32:47.5388642Z === updating nrf_hw_models (modules/bsim_hw_models/nrf_hw_models):
+2026-04-04T12:32:47.5565571Z HEAD is now at f459580 TEMP & ECB: Fix INTEN sideeffect prototypes
+2026-04-04T12:32:47.5569233Z === updating open-amp (modules/lib/open-amp):
+2026-04-04T12:32:47.5851820Z HEAD is now at 42b7c57 cmake: Compile with WITH_DCACHE_RSC_TABLE
+2026-04-04T12:32:47.5855778Z === updating percepio (modules/debug/percepio):
+2026-04-04T12:32:47.6124541Z HEAD is now at a3728ef Merge pull request #4 from peter-mitsis/pmitsis-k_mem_block
+2026-04-04T12:32:47.6130544Z === updating picolibc (modules/lib/picolibc):
+2026-04-04T12:32:47.7702694Z HEAD is now at d07c38ff0 Version 1.8.2
+2026-04-04T12:32:47.7709432Z === updating segger (modules/debug/segger):
+2026-04-04T12:32:47.7851519Z HEAD is now at 9d01912 segger: config: RTT spinlock implementation
+2026-04-04T12:32:47.7855544Z === updating tinycrypt (modules/crypto/tinycrypt):
+2026-04-04T12:32:47.7989893Z HEAD is now at 3e9a49d cmake: Fix conditional in root CMakeLists.txt
+2026-04-04T12:32:47.7993951Z === updating trusted-firmware-a (modules/tee/tf-a/trusted-firmware-a):
+2026-04-04T12:32:47.9900662Z HEAD is now at 421dc0502 Merge pull request #3 from SgrrZhf/topics/huizha01/2.9.0-updates
+2026-04-04T12:32:47.9907778Z === updating uoscore-uedhoc (modules/lib/uoscore-uedhoc):
+2026-04-04T12:32:48.0147493Z HEAD is now at 5fe2cb6 2.2.1
+2026-04-04T12:32:48.0150881Z === updating zcbor (modules/lib/zcbor):
+2026-04-04T12:32:48.0333855Z HEAD is now at 67fd8bb Update version from 0.6.99 to 0.7.0

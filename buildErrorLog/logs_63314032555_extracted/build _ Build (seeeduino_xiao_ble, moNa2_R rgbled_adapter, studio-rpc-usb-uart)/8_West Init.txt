@@ -1,0 +1,15 @@
+﻿2026-04-04T12:32:32.1511501Z ##[group]Run west init -l "/tmp/zmk-config/config"
+2026-04-04T12:32:32.1511887Z [36;1mwest init -l "/tmp/zmk-config/config"[0m
+2026-04-04T12:32:32.1512244Z shell: sh -e {0}
+2026-04-04T12:32:32.1512423Z env:
+2026-04-04T12:32:32.1512597Z   build_dir: /tmp/tmp.9SjUl0Zvhh
+2026-04-04T12:32:32.1512826Z   base_dir: /tmp/zmk-config
+2026-04-04T12:32:32.1513038Z   zephyr_version: 4.1.0
+2026-04-04T12:32:32.1513261Z   extra_west_args: -S "studio-rpc-usb-uart"
+2026-04-04T12:32:32.1513761Z   extra_cmake_args: -DSHIELD="moNa2_R rgbled_adapter" -DZMK_EXTRA_MODULES='/__w/zmk-config-moNa2/zmk-config-moNa2'
+2026-04-04T12:32:32.1514618Z   display_name: moNa2_R rgbled_adapter - seeeduino_xiao_ble
+2026-04-04T12:32:32.1515001Z   artifact_name: moNa2_R rgbled_adapter-seeeduino_xiao_ble-zmk
+2026-04-04T12:32:32.1515310Z ##[endgroup]
+2026-04-04T12:32:32.3175222Z === Initializing from existing manifest repository config
+2026-04-04T12:32:32.3176082Z --- Creating /tmp/zmk-config/.west and local configuration file
+2026-04-04T12:32:32.3185461Z === Initialized. Now run "west update" inside /tmp/zmk-config.

@@ -1,0 +1,29 @@
+﻿2026-04-04T12:33:03.5017537Z ##[group]Run actions/upload-artifact@v4
+2026-04-04T12:33:03.5017635Z with:
+2026-04-04T12:33:03.5017784Z   name: artifact-settings_reset-seeeduino_xiao_ble-zmk
+2026-04-04T12:33:03.5017889Z   path: /tmp/tmp.mfYTQzOaHL/artifacts
+2026-04-04T12:33:03.5017970Z   if-no-files-found: warn
+2026-04-04T12:33:03.5018051Z   compression-level: 6
+2026-04-04T12:33:03.5018140Z   overwrite: false
+2026-04-04T12:33:03.5018227Z   include-hidden-files: false
+2026-04-04T12:33:03.5018295Z env:
+2026-04-04T12:33:03.5018383Z   build_dir: /tmp/tmp.mfYTQzOaHL
+2026-04-04T12:33:03.5018461Z   base_dir: /tmp/zmk-config
+2026-04-04T12:33:03.5018542Z   zephyr_version: 4.1.0
+2026-04-04T12:33:03.5018616Z   extra_west_args: 
+2026-04-04T12:33:03.5018921Z   extra_cmake_args: -DSHIELD="settings_reset" -DZMK_EXTRA_MODULES='/__w/zmk-config-moNa2/zmk-config-moNa2'
+2026-04-04T12:33:03.5019054Z   display_name: settings_reset - seeeduino_xiao_ble
+2026-04-04T12:33:03.5019181Z   artifact_name: settings_reset-seeeduino_xiao_ble-zmk
+2026-04-04T12:33:03.5019281Z ##[endgroup]
+2026-04-04T12:33:03.5022729Z ##[command]/usr/bin/docker exec  948140d1557a2f6cd4ed9730de6ec0332f46b14a57e421851327a24a2e7f45e2 sh -c "cat /etc/*release | grep ^ID"
+2026-04-04T12:33:03.8194191Z With the provided path, there will be 1 file uploaded
+2026-04-04T12:33:03.8195434Z Artifact name is valid!
+2026-04-04T12:33:03.8197910Z Root directory input is valid!
+2026-04-04T12:33:03.9806786Z Beginning upload of artifact content to blob storage
+2026-04-04T12:33:04.1630179Z Uploaded bytes 39716
+2026-04-04T12:33:04.2047205Z Finished uploading artifact content to blob storage!
+2026-04-04T12:33:04.2051412Z SHA256 digest of uploaded artifact zip is 1dbaea12a1706020c3bcf4f332d1f607769d9670600223d7797d89fae43d4603
+2026-04-04T12:33:04.2054085Z Finalizing artifact upload
+2026-04-04T12:33:04.2976371Z Artifact artifact-settings_reset-seeeduino_xiao_ble-zmk.zip successfully finalized. Artifact ID 6270800744
+2026-04-04T12:33:04.2978120Z Artifact artifact-settings_reset-seeeduino_xiao_ble-zmk has been successfully uploaded! Final size is 39716 bytes. Artifact ID is 6270800744
+2026-04-04T12:33:04.2985532Z Artifact download URL: https://github.com/4neyama/zmk-config-moNa2/actions/runs/23978942665/artifacts/6270800744

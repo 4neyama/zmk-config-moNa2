@@ -1,0 +1,35 @@
+﻿2026-04-04T12:31:27.7408501Z ##[group]Run python3 -m pip install remarshal
+2026-04-04T12:31:27.7410110Z [36;1mpython3 -m pip install remarshal[0m
+2026-04-04T12:31:27.7480635Z shell: /usr/bin/bash -e {0}
+2026-04-04T12:31:27.7481797Z ##[endgroup]
+2026-04-04T12:31:28.8587274Z Defaulting to user installation because normal site-packages is not writeable
+2026-04-04T12:31:29.3742802Z Collecting remarshal
+2026-04-04T12:31:29.4167094Z   Downloading remarshal-1.3.0-py3-none-any.whl (13 kB)
+2026-04-04T12:31:29.4318476Z Requirement already satisfied: tomli<3.0,>=2.4 in /usr/local/lib/python3.10/dist-packages (from remarshal) (2.4.1)
+2026-04-04T12:31:29.4709543Z Collecting tomlkit<0.15,>=0.14
+2026-04-04T12:31:29.4748609Z   Downloading tomlkit-0.14.0-py3-none-any.whl (39 kB)
+2026-04-04T12:31:29.4948152Z Collecting u-msgpack-python<3.0,>=2.8
+2026-04-04T12:31:29.4996370Z   Downloading u_msgpack_python-2.8.0-py2.py3-none-any.whl (10 kB)
+2026-04-04T12:31:29.5221421Z Collecting rich-argparse<2.0,>=1.7.2
+2026-04-04T12:31:29.5256470Z   Downloading rich_argparse-1.7.2-py3-none-any.whl (25 kB)
+2026-04-04T12:31:29.6464682Z Collecting cbor2<6.0,>=5.8
+2026-04-04T12:31:29.6505787Z   Downloading cbor2-5.9.0-cp310-cp310-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl (255 kB)
+2026-04-04T12:31:29.6570108Z      ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 255.5/255.5 KB 63.0 MB/s eta 0:00:00
+2026-04-04T12:31:29.9603632Z Collecting ruamel.yaml<0.20,>=0.19
+2026-04-04T12:31:29.9641793Z   Downloading ruamel_yaml-0.19.1-py3-none-any.whl (118 kB)
+2026-04-04T12:31:29.9687584Z      ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 118.1/118.1 KB 48.6 MB/s eta 0:00:00
+2026-04-04T12:31:29.9910163Z Collecting colorama<0.5,>=0.4.6
+2026-04-04T12:31:29.9955397Z   Downloading colorama-0.4.6-py2.py3-none-any.whl (25 kB)
+2026-04-04T12:31:30.0928517Z Collecting rich>=11.0.0
+2026-04-04T12:31:30.0965767Z   Downloading rich-14.3.3-py3-none-any.whl (310 kB)
+2026-04-04T12:31:30.1028945Z      ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 310.5/310.5 KB 76.4 MB/s eta 0:00:00
+2026-04-04T12:31:30.1467615Z Collecting markdown-it-py>=2.2.0
+2026-04-04T12:31:30.1504027Z   Downloading markdown_it_py-4.0.0-py3-none-any.whl (87 kB)
+2026-04-04T12:31:30.1542961Z      ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 87.3/87.3 KB 38.3 MB/s eta 0:00:00
+2026-04-04T12:31:30.1943971Z Collecting pygments<3.0.0,>=2.13.0
+2026-04-04T12:31:30.1980485Z   Downloading pygments-2.20.0-py3-none-any.whl (1.2 MB)
+2026-04-04T12:31:30.2116330Z      ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 1.2/1.2 MB 107.7 MB/s eta 0:00:00
+2026-04-04T12:31:30.2457325Z Collecting mdurl~=0.1
+2026-04-04T12:31:30.2491794Z   Downloading mdurl-0.1.2-py3-none-any.whl (10.0 kB)
+2026-04-04T12:31:30.4756925Z Installing collected packages: u-msgpack-python, tomlkit, ruamel.yaml, pygments, mdurl, colorama, cbor2, markdown-it-py, rich, rich-argparse, remarshal
+2026-04-04T12:31:31.3807467Z Successfully installed cbor2-5.9.0 colorama-0.4.6 markdown-it-py-4.0.0 mdurl-0.1.2 pygments-2.20.0 remarshal-1.3.0 rich-14.3.3 rich-argparse-1.7.2 ruamel.yaml-0.19.1 tomlkit-0.14.0 u-msgpack-python-2.8.0

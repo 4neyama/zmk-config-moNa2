@@ -1,0 +1,39 @@
+﻿2026-04-04T12:32:02.7338582Z ##[group]Run if [ -e zephyr/module.yml ]; then
+2026-04-04T12:32:02.7338956Z [36;1mif [ -e zephyr/module.yml ]; then[0m
+2026-04-04T12:32:02.7339344Z [36;1m  export zmk_load_arg=" -DZMK_EXTRA_MODULES='${GITHUB_WORKSPACE}'"[0m
+2026-04-04T12:32:02.7339749Z [36;1m  new_tmp_dir="${TMPDIR:-/tmp}/zmk-config"[0m
+2026-04-04T12:32:02.7340051Z [36;1m  mkdir -p "${new_tmp_dir}"[0m
+2026-04-04T12:32:02.7340333Z [36;1m  echo "base_dir=${new_tmp_dir}" >> $GITHUB_ENV[0m
+2026-04-04T12:32:02.7340598Z [36;1melse[0m
+2026-04-04T12:32:02.7340837Z [36;1m  echo "base_dir=${GITHUB_WORKSPACE}" >> $GITHUB_ENV[0m
+2026-04-04T12:32:02.7341138Z [36;1mfi[0m
+2026-04-04T12:32:02.7341294Z [36;1m[0m
+2026-04-04T12:32:02.7341468Z [36;1mif [ -n "${snippet}" ]; then[0m
+2026-04-04T12:32:02.7341752Z [36;1m  extra_west_args="-S \"${snippet}\""[0m
+2026-04-04T12:32:02.7342034Z [36;1mfi[0m
+2026-04-04T12:32:02.7342187Z [36;1m[0m
+2026-04-04T12:32:02.7342594Z [36;1mecho "zephyr_version=${ZEPHYR_VERSION}" >> $GITHUB_ENV[0m
+2026-04-04T12:32:02.7343017Z [36;1mecho "extra_west_args=${extra_west_args}" >> $GITHUB_ENV[0m
+2026-04-04T12:32:02.7343487Z [36;1mecho "extra_cmake_args=${shield:+-DSHIELD=\"$shield\"}${zmk_load_arg}" >> $GITHUB_ENV[0m
+2026-04-04T12:32:02.7344259Z [36;1mecho "display_name=${shield:+$shield - }${board}" >> $GITHUB_ENV[0m
+2026-04-04T12:32:02.7344766Z [36;1mecho "artifact_name=${artifact_name:-${shield:+$shield-}${board}-zmk}" >> $GITHUB_ENV[0m
+2026-04-04T12:32:02.7346414Z shell: sh -x {0}
+2026-04-04T12:32:02.7346611Z env:
+2026-04-04T12:32:02.7346793Z   build_dir: /tmp/tmp.9SjUl0Zvhh
+2026-04-04T12:32:02.7347035Z   board: seeeduino_xiao_ble
+2026-04-04T12:32:02.7347258Z   shield: moNa2_R rgbled_adapter
+2026-04-04T12:32:02.7347468Z   artifact_name: 
+2026-04-04T12:32:02.7347662Z   snippet: studio-rpc-usb-uart
+2026-04-04T12:32:02.7347887Z ##[endgroup]
+2026-04-04T12:32:02.7848865Z + [ -e zephyr/module.yml ]
+2026-04-04T12:32:02.7852964Z + export zmk_load_arg= -DZMK_EXTRA_MODULES='/__w/zmk-config-moNa2/zmk-config-moNa2'
+2026-04-04T12:32:02.7855184Z + new_tmp_dir=/tmp/zmk-config
+2026-04-04T12:32:02.7855848Z + mkdir -p /tmp/zmk-config
+2026-04-04T12:32:02.7859592Z + echo base_dir=/tmp/zmk-config
+2026-04-04T12:32:02.7861642Z + [ -n studio-rpc-usb-uart ]
+2026-04-04T12:32:02.7862185Z + extra_west_args=-S "studio-rpc-usb-uart"
+2026-04-04T12:32:02.7864286Z + echo zephyr_version=4.1.0
+2026-04-04T12:32:02.7865562Z + echo extra_west_args=-S "studio-rpc-usb-uart"
+2026-04-04T12:32:02.7866996Z + echo extra_cmake_args=-DSHIELD="moNa2_R rgbled_adapter" -DZMK_EXTRA_MODULES='/__w/zmk-config-moNa2/zmk-config-moNa2'
+2026-04-04T12:32:02.7869764Z + echo display_name=moNa2_R rgbled_adapter - seeeduino_xiao_ble
+2026-04-04T12:32:02.7873367Z + echo artifact_name=moNa2_R rgbled_adapter-seeeduino_xiao_ble-zmk

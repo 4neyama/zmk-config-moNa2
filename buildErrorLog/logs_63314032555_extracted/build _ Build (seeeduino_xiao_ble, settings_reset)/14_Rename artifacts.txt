@@ -1,0 +1,22 @@
+﻿2026-04-04T12:33:03.4371689Z ##[group]Run mkdir "/tmp/tmp.mfYTQzOaHL/artifacts"
+2026-04-04T12:33:03.4371864Z [36;1mmkdir "/tmp/tmp.mfYTQzOaHL/artifacts"[0m
+2026-04-04T12:33:03.4371999Z [36;1mif [ -f "/tmp/tmp.mfYTQzOaHL/zephyr/zmk.uf2" ][0m
+2026-04-04T12:33:03.4372073Z [36;1mthen[0m
+2026-04-04T12:33:03.4372430Z [36;1m  cp "/tmp/tmp.mfYTQzOaHL/zephyr/zmk.uf2" "/tmp/tmp.mfYTQzOaHL/artifacts/settings_reset-seeeduino_xiao_ble-zmk.uf2"[0m
+2026-04-04T12:33:03.4372566Z [36;1melif [ -f "/tmp/tmp.mfYTQzOaHL/zephyr/zmk.bin" ][0m
+2026-04-04T12:33:03.4372643Z [36;1mthen[0m
+2026-04-04T12:33:03.4373034Z [36;1m  cp "/tmp/tmp.mfYTQzOaHL/zephyr/zmk.bin" "/tmp/tmp.mfYTQzOaHL/artifacts/settings_reset-seeeduino_xiao_ble-zmk.bin"[0m
+2026-04-04T12:33:03.4373105Z [36;1mfi[0m
+2026-04-04T12:33:03.4373272Z shell: sh -x {0}
+2026-04-04T12:33:03.4373338Z env:
+2026-04-04T12:33:03.4373436Z   build_dir: /tmp/tmp.mfYTQzOaHL
+2026-04-04T12:33:03.4373517Z   base_dir: /tmp/zmk-config
+2026-04-04T12:33:03.4373594Z   zephyr_version: 4.1.0
+2026-04-04T12:33:03.4373853Z   extra_west_args: 
+2026-04-04T12:33:03.4374164Z   extra_cmake_args: -DSHIELD="settings_reset" -DZMK_EXTRA_MODULES='/__w/zmk-config-moNa2/zmk-config-moNa2'
+2026-04-04T12:33:03.4374293Z   display_name: settings_reset - seeeduino_xiao_ble
+2026-04-04T12:33:03.4374420Z   artifact_name: settings_reset-seeeduino_xiao_ble-zmk
+2026-04-04T12:33:03.4374500Z ##[endgroup]
+2026-04-04T12:33:03.4908323Z + mkdir /tmp/tmp.mfYTQzOaHL/artifacts
+2026-04-04T12:33:03.4916987Z + [ -f /tmp/tmp.mfYTQzOaHL/zephyr/zmk.uf2 ]
+2026-04-04T12:33:03.4917816Z + cp /tmp/tmp.mfYTQzOaHL/zephyr/zmk.uf2 /tmp/tmp.mfYTQzOaHL/artifacts/settings_reset-seeeduino_xiao_ble-zmk.uf2

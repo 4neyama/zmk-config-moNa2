@@ -1,0 +1,15 @@
+﻿2026-04-04T12:32:38.2298704Z ##[group]Run west init -l "/tmp/zmk-config/config"
+2026-04-04T12:32:38.2299100Z [36;1mwest init -l "/tmp/zmk-config/config"[0m
+2026-04-04T12:32:38.2299476Z shell: sh -e {0}
+2026-04-04T12:32:38.2299658Z env:
+2026-04-04T12:32:38.2299843Z   build_dir: /tmp/tmp.mfYTQzOaHL
+2026-04-04T12:32:38.2300701Z   base_dir: /tmp/zmk-config
+2026-04-04T12:32:38.2300995Z   zephyr_version: 4.1.0
+2026-04-04T12:32:38.2301197Z   extra_west_args: 
+2026-04-04T12:32:38.2301613Z   extra_cmake_args: -DSHIELD="settings_reset" -DZMK_EXTRA_MODULES='/__w/zmk-config-moNa2/zmk-config-moNa2'
+2026-04-04T12:32:38.2302117Z   display_name: settings_reset - seeeduino_xiao_ble
+2026-04-04T12:32:38.2302452Z   artifact_name: settings_reset-seeeduino_xiao_ble-zmk
+2026-04-04T12:32:38.2302740Z ##[endgroup]
+2026-04-04T12:32:38.4045125Z === Initializing from existing manifest repository config
+2026-04-04T12:32:38.4045938Z --- Creating /tmp/zmk-config/.west and local configuration file
+2026-04-04T12:32:38.4054778Z === Initialized. Now run "west update" inside /tmp/zmk-config.

@@ -1,0 +1,14 @@
+2026-04-04T12:31:33.7300000Z Evaluating build.if
+2026-04-04T12:31:33.7300000Z Evaluating: success()
+2026-04-04T12:31:33.7300000Z Result: true
+2026-04-04T12:31:33.7300000Z Evaluating build.build.if
+2026-04-04T12:31:33.7300000Z Evaluating: success()
+2026-04-04T12:31:33.7300000Z Result: true
+2026-04-04T12:31:33.7320000Z Requested labels: ubuntu-latest
+2026-04-04T12:31:33.7320000Z Job defined at: zmkfirmware/zmk/.github/workflows/build-user-config.yml@refs/tags/v0.2.1
+2026-04-04T12:31:33.7320000Z Reusable workflow chain:
+2026-04-04T12:31:33.7320000Z 4neyama/zmk-config-moNa2/.github/workflows/build.yml@refs/heads/test/DYA-Studio (50861605815aebb8cc9653ca84a77416cae3b2af)
+2026-04-04T12:31:33.7320000Z -> zmkfirmware/zmk/.github/workflows/build-user-config.yml@refs/tags/v0.2.1 (241ff39556b3685c9344c4c22fd9a655af8eb3ba)
+2026-04-04T12:31:33.7320000Z Waiting for a runner to pick up this job...
+2026-04-04T12:31:34.2230000Z Job is waiting for a hosted runner to come online.
+2026-04-04T12:31:34.2230000Z Job is about to start running on the hosted runner: GitHub Actions 1000000395

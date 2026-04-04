@@ -1,0 +1,22 @@
+﻿2026-04-04T12:31:31.4615673Z ##[group]Run echo "build_matrix=$(yaml2json 'build.yaml' | jq -c .)" >> $GITHUB_ENV
+2026-04-04T12:31:31.4616259Z [36;1mecho "build_matrix=$(yaml2json 'build.yaml' | jq -c .)" >> $GITHUB_ENV[0m
+2026-04-04T12:31:31.4616675Z [36;1myaml2json "build.yaml" | jq[0m
+2026-04-04T12:31:31.4675896Z shell: /usr/bin/bash -e {0}
+2026-04-04T12:31:31.4676144Z ##[endgroup]
+2026-04-04T12:31:31.6717956Z {
+2026-04-04T12:31:31.6718283Z   "include": [
+2026-04-04T12:31:31.6718582Z     {
+2026-04-04T12:31:31.6718885Z       "board": "seeeduino_xiao_ble",
+2026-04-04T12:31:31.6719338Z       "shield": "moNa2_R rgbled_adapter",
+2026-04-04T12:31:31.6719835Z       "snippet": "studio-rpc-usb-uart"
+2026-04-04T12:31:31.6720360Z     },
+2026-04-04T12:31:31.6720653Z     {
+2026-04-04T12:31:31.6720929Z       "board": "seeeduino_xiao_ble",
+2026-04-04T12:31:31.6721270Z       "shield": "moNa2_L rgbled_adapter"
+2026-04-04T12:31:31.6721506Z     },
+2026-04-04T12:31:31.6721647Z     {
+2026-04-04T12:31:31.6721810Z       "board": "seeeduino_xiao_ble",
+2026-04-04T12:31:31.6722100Z       "shield": "settings_reset"
+2026-04-04T12:31:31.6722309Z     }
+2026-04-04T12:31:31.6722449Z   ]
+2026-04-04T12:31:31.6722687Z }

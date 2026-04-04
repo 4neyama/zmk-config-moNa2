@@ -1,0 +1,198 @@
+﻿2026-04-04T12:31:25.4496583Z Current runner version: '2.333.1'
+2026-04-04T12:31:25.4531081Z ##[group]Runner Image Provisioner
+2026-04-04T12:31:25.4532563Z Hosted Compute Agent
+2026-04-04T12:31:25.4533620Z Version: 20260213.493
+2026-04-04T12:31:25.4534833Z Commit: 5c115507f6dd24b8de37d8bbe0bb4509d0cc0fa3
+2026-04-04T12:31:25.4536029Z Build Date: 2026-02-13T00:28:41Z
+2026-04-04T12:31:25.4536999Z Worker ID: {4d34de1b-a591-4979-a638-118290666a45}
+2026-04-04T12:31:25.4538120Z Azure Region: eastus
+2026-04-04T12:31:25.4539173Z ##[endgroup]
+2026-04-04T12:31:25.4541301Z ##[group]Operating System
+2026-04-04T12:31:25.4542207Z Ubuntu
+2026-04-04T12:31:25.4543056Z 22.04.5
+2026-04-04T12:31:25.4544055Z LTS
+2026-04-04T12:31:25.4544749Z ##[endgroup]
+2026-04-04T12:31:25.4545632Z ##[group]Runner Image
+2026-04-04T12:31:25.4546528Z Image: ubuntu-22.04
+2026-04-04T12:31:25.4547366Z Version: 20260329.74.1
+2026-04-04T12:31:25.4549373Z Included Software: https://github.com/actions/runner-images/blob/ubuntu22/20260329.74/images/ubuntu/Ubuntu2204-Readme.md
+2026-04-04T12:31:25.4552007Z Image Release: https://github.com/actions/runner-images/releases/tag/ubuntu22%2F20260329.74
+2026-04-04T12:31:25.4553571Z ##[endgroup]
+2026-04-04T12:31:25.4558278Z ##[group]GITHUB_TOKEN Permissions
+2026-04-04T12:31:25.4561377Z Actions: write
+2026-04-04T12:31:25.4562275Z ArtifactMetadata: write
+2026-04-04T12:31:25.4563112Z Attestations: write
+2026-04-04T12:31:25.4564403Z Checks: write
+2026-04-04T12:31:25.4565129Z Contents: write
+2026-04-04T12:31:25.4565947Z Deployments: write
+2026-04-04T12:31:25.4566979Z Discussions: write
+2026-04-04T12:31:25.4567749Z Issues: write
+2026-04-04T12:31:25.4568504Z Metadata: read
+2026-04-04T12:31:25.4569335Z Models: read
+2026-04-04T12:31:25.4570135Z Packages: write
+2026-04-04T12:31:25.4570905Z Pages: write
+2026-04-04T12:31:25.4571965Z PullRequests: write
+2026-04-04T12:31:25.4572835Z RepositoryProjects: write
+2026-04-04T12:31:25.4573663Z SecurityEvents: write
+2026-04-04T12:31:25.4574908Z Statuses: write
+2026-04-04T12:31:25.4575737Z ##[endgroup]
+2026-04-04T12:31:25.4578554Z Secret source: Actions
+2026-04-04T12:31:25.4580245Z Prepare workflow directory
+2026-04-04T12:31:25.5039705Z Prepare all required actions
+2026-04-04T12:31:25.5094618Z Getting action download info
+2026-04-04T12:31:25.7760801Z Download action repository 'actions/checkout@v4' (SHA:34e114876b0b11c390a56381ad16ebd13914f8d5)
+2026-04-04T12:31:26.0335372Z Uses: zmkfirmware/zmk/.github/workflows/build-user-config.yml@refs/tags/v0.2.1 (241ff39556b3685c9344c4c22fd9a655af8eb3ba)
+2026-04-04T12:31:26.0340373Z ##[group] Inputs
+2026-04-04T12:31:26.0341057Z   build_matrix_path: build.yaml
+2026-04-04T12:31:26.0341653Z   config_path: config
+2026-04-04T12:31:26.0342191Z   fallback_binary: bin
+2026-04-04T12:31:26.0342661Z   archive_name: firmware
+2026-04-04T12:31:26.0343267Z ##[endgroup]
+2026-04-04T12:31:26.0343957Z Complete job name: build / Fetch Build Keyboards
+2026-04-04T12:31:26.1130496Z ##[group]Run actions/checkout@v4
+2026-04-04T12:31:26.1131320Z with:
+2026-04-04T12:31:26.1131720Z   repository: 4neyama/zmk-config-moNa2
+2026-04-04T12:31:26.1132418Z   token: ***
+2026-04-04T12:31:26.1132788Z   ssh-strict: true
+2026-04-04T12:31:26.1133172Z   ssh-user: git
+2026-04-04T12:31:26.1133567Z   persist-credentials: true
+2026-04-04T12:31:26.1134160Z   clean: true
+2026-04-04T12:31:26.1134562Z   sparse-checkout-cone-mode: true
+2026-04-04T12:31:26.1135029Z   fetch-depth: 1
+2026-04-04T12:31:26.1135414Z   fetch-tags: false
+2026-04-04T12:31:26.1135796Z   show-progress: true
+2026-04-04T12:31:26.1136187Z   lfs: false
+2026-04-04T12:31:26.1136540Z   submodules: false
+2026-04-04T12:31:26.1136927Z   set-safe-directory: true
+2026-04-04T12:31:26.1137602Z ##[endgroup]
+2026-04-04T12:31:26.2200697Z Syncing repository: 4neyama/zmk-config-moNa2
+2026-04-04T12:31:26.2202390Z ##[group]Getting Git version info
+2026-04-04T12:31:26.2203218Z Working directory is '/home/runner/work/zmk-config-moNa2/zmk-config-moNa2'
+2026-04-04T12:31:26.2204543Z [command]/usr/bin/git version
+2026-04-04T12:31:26.2293055Z git version 2.53.0
+2026-04-04T12:31:26.2318914Z ##[endgroup]
+2026-04-04T12:31:26.2339282Z Temporarily overriding HOME='/home/runner/work/_temp/7da8e9c1-2586-4ee1-8130-4ad419f797ab' before making global git config changes
+2026-04-04T12:31:26.2344166Z Adding repository directory to the temporary git global config as a safe directory
+2026-04-04T12:31:26.2345457Z [command]/usr/bin/git config --global --add safe.directory /home/runner/work/zmk-config-moNa2/zmk-config-moNa2
+2026-04-04T12:31:26.2380612Z Deleting the contents of '/home/runner/work/zmk-config-moNa2/zmk-config-moNa2'
+2026-04-04T12:31:26.2384038Z ##[group]Initializing the repository
+2026-04-04T12:31:26.2387990Z [command]/usr/bin/git init /home/runner/work/zmk-config-moNa2/zmk-config-moNa2
+2026-04-04T12:31:26.2548884Z hint: Using 'master' as the name for the initial branch. This default branch name
+2026-04-04T12:31:26.2550345Z hint: will change to "main" in Git 3.0. To configure the initial branch name
+2026-04-04T12:31:26.2551243Z hint: to use in all of your new repositories, which will suppress this warning,
+2026-04-04T12:31:26.2551944Z hint: call:
+2026-04-04T12:31:26.2552412Z hint:
+2026-04-04T12:31:26.2553163Z hint: 	git config --global init.defaultBranch <name>
+2026-04-04T12:31:26.2554100Z hint:
+2026-04-04T12:31:26.2554648Z hint: Names commonly chosen instead of 'master' are 'main', 'trunk' and
+2026-04-04T12:31:26.2555515Z hint: 'development'. The just-created branch can be renamed via this command:
+2026-04-04T12:31:26.2556194Z hint:
+2026-04-04T12:31:26.2556557Z hint: 	git branch -m <name>
+2026-04-04T12:31:26.2556979Z hint:
+2026-04-04T12:31:26.2557548Z hint: Disable this message with "git config set advice.defaultBranchName false"
+2026-04-04T12:31:26.2558817Z Initialized empty Git repository in /home/runner/work/zmk-config-moNa2/zmk-config-moNa2/.git/
+2026-04-04T12:31:26.2565526Z [command]/usr/bin/git remote add origin https://github.com/4neyama/zmk-config-moNa2
+2026-04-04T12:31:26.2602450Z ##[endgroup]
+2026-04-04T12:31:26.2603631Z ##[group]Disabling automatic garbage collection
+2026-04-04T12:31:26.2607578Z [command]/usr/bin/git config --local gc.auto 0
+2026-04-04T12:31:26.2637587Z ##[endgroup]
+2026-04-04T12:31:26.2638802Z ##[group]Setting up auth
+2026-04-04T12:31:26.2646181Z [command]/usr/bin/git config --local --name-only --get-regexp core\.sshCommand
+2026-04-04T12:31:26.2679850Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'core\.sshCommand' && git config --local --unset-all 'core.sshCommand' || :"
+2026-04-04T12:31:26.3024382Z [command]/usr/bin/git config --local --name-only --get-regexp http\.https\:\/\/github\.com\/\.extraheader
+2026-04-04T12:31:26.3053213Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'http\.https\:\/\/github\.com\/\.extraheader' && git config --local --unset-all 'http.https://github.com/.extraheader' || :"
+2026-04-04T12:31:26.3273364Z [command]/usr/bin/git config --local --name-only --get-regexp ^includeIf\.gitdir:
+2026-04-04T12:31:26.3305865Z [command]/usr/bin/git submodule foreach --recursive git config --local --show-origin --name-only --get-regexp remote.origin.url
+2026-04-04T12:31:26.3528309Z [command]/usr/bin/git config --local http.https://github.com/.extraheader AUTHORIZATION: basic ***
+2026-04-04T12:31:26.3569703Z ##[endgroup]
+2026-04-04T12:31:26.3570526Z ##[group]Fetching the repository
+2026-04-04T12:31:26.3578260Z [command]/usr/bin/git -c protocol.version=2 fetch --no-tags --prune --no-recurse-submodules --depth=1 origin +50861605815aebb8cc9653ca84a77416cae3b2af:refs/remotes/origin/test/DYA-Studio
+2026-04-04T12:31:27.5717268Z From https://github.com/4neyama/zmk-config-moNa2
+2026-04-04T12:31:27.5719401Z  * [new ref]         50861605815aebb8cc9653ca84a77416cae3b2af -> origin/test/DYA-Studio
+2026-04-04T12:31:27.5754045Z ##[endgroup]
+2026-04-04T12:31:27.5755404Z ##[group]Determining the checkout info
+2026-04-04T12:31:27.5756939Z ##[endgroup]
+2026-04-04T12:31:27.5761579Z [command]/usr/bin/git sparse-checkout disable
+2026-04-04T12:31:27.5803604Z [command]/usr/bin/git config --local --unset-all extensions.worktreeConfig
+2026-04-04T12:31:27.5833168Z ##[group]Checking out the ref
+2026-04-04T12:31:27.5838171Z [command]/usr/bin/git checkout --progress --force -B test/DYA-Studio refs/remotes/origin/test/DYA-Studio
+2026-04-04T12:31:27.7118492Z Switched to a new branch 'test/DYA-Studio'
+2026-04-04T12:31:27.7120443Z branch 'test/DYA-Studio' set up to track 'origin/test/DYA-Studio'.
+2026-04-04T12:31:27.7160990Z ##[endgroup]
+2026-04-04T12:31:27.7164457Z [command]/usr/bin/git log -1 --format=%H
+2026-04-04T12:31:27.7187052Z 50861605815aebb8cc9653ca84a77416cae3b2af
+2026-04-04T12:31:27.7408541Z ##[group]Run python3 -m pip install remarshal
+2026-04-04T12:31:27.7410117Z [36;1mpython3 -m pip install remarshal[0m
+2026-04-04T12:31:27.7480661Z shell: /usr/bin/bash -e {0}
+2026-04-04T12:31:27.7481801Z ##[endgroup]
+2026-04-04T12:31:28.8587314Z Defaulting to user installation because normal site-packages is not writeable
+2026-04-04T12:31:29.3742864Z Collecting remarshal
+2026-04-04T12:31:29.4167149Z   Downloading remarshal-1.3.0-py3-none-any.whl (13 kB)
+2026-04-04T12:31:29.4318767Z Requirement already satisfied: tomli<3.0,>=2.4 in /usr/local/lib/python3.10/dist-packages (from remarshal) (2.4.1)
+2026-04-04T12:31:29.4709590Z Collecting tomlkit<0.15,>=0.14
+2026-04-04T12:31:29.4749194Z   Downloading tomlkit-0.14.0-py3-none-any.whl (39 kB)
+2026-04-04T12:31:29.4948195Z Collecting u-msgpack-python<3.0,>=2.8
+2026-04-04T12:31:29.4996404Z   Downloading u_msgpack_python-2.8.0-py2.py3-none-any.whl (10 kB)
+2026-04-04T12:31:29.5221461Z Collecting rich-argparse<2.0,>=1.7.2
+2026-04-04T12:31:29.5256620Z   Downloading rich_argparse-1.7.2-py3-none-any.whl (25 kB)
+2026-04-04T12:31:29.6464740Z Collecting cbor2<6.0,>=5.8
+2026-04-04T12:31:29.6505822Z   Downloading cbor2-5.9.0-cp310-cp310-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl (255 kB)
+2026-04-04T12:31:29.6570136Z      ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 255.5/255.5 KB 63.0 MB/s eta 0:00:00
+2026-04-04T12:31:29.9603942Z Collecting ruamel.yaml<0.20,>=0.19
+2026-04-04T12:31:29.9641844Z   Downloading ruamel_yaml-0.19.1-py3-none-any.whl (118 kB)
+2026-04-04T12:31:29.9687603Z      ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 118.1/118.1 KB 48.6 MB/s eta 0:00:00
+2026-04-04T12:31:29.9910196Z Collecting colorama<0.5,>=0.4.6
+2026-04-04T12:31:29.9955418Z   Downloading colorama-0.4.6-py2.py3-none-any.whl (25 kB)
+2026-04-04T12:31:30.0928560Z Collecting rich>=11.0.0
+2026-04-04T12:31:30.0965787Z   Downloading rich-14.3.3-py3-none-any.whl (310 kB)
+2026-04-04T12:31:30.1029047Z      ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 310.5/310.5 KB 76.4 MB/s eta 0:00:00
+2026-04-04T12:31:30.1467675Z Collecting markdown-it-py>=2.2.0
+2026-04-04T12:31:30.1504046Z   Downloading markdown_it_py-4.0.0-py3-none-any.whl (87 kB)
+2026-04-04T12:31:30.1542977Z      ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 87.3/87.3 KB 38.3 MB/s eta 0:00:00
+2026-04-04T12:31:30.1944007Z Collecting pygments<3.0.0,>=2.13.0
+2026-04-04T12:31:30.1980501Z   Downloading pygments-2.20.0-py3-none-any.whl (1.2 MB)
+2026-04-04T12:31:30.2116360Z      ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 1.2/1.2 MB 107.7 MB/s eta 0:00:00
+2026-04-04T12:31:30.2457369Z Collecting mdurl~=0.1
+2026-04-04T12:31:30.2491812Z   Downloading mdurl-0.1.2-py3-none-any.whl (10.0 kB)
+2026-04-04T12:31:30.4756968Z Installing collected packages: u-msgpack-python, tomlkit, ruamel.yaml, pygments, mdurl, colorama, cbor2, markdown-it-py, rich, rich-argparse, remarshal
+2026-04-04T12:31:31.3807560Z Successfully installed cbor2-5.9.0 colorama-0.4.6 markdown-it-py-4.0.0 mdurl-0.1.2 pygments-2.20.0 remarshal-1.3.0 rich-14.3.3 rich-argparse-1.7.2 ruamel.yaml-0.19.1 tomlkit-0.14.0 u-msgpack-python-2.8.0
+2026-04-04T12:31:31.4615686Z ##[group]Run echo "build_matrix=$(yaml2json 'build.yaml' | jq -c .)" >> $GITHUB_ENV
+2026-04-04T12:31:31.4616263Z [36;1mecho "build_matrix=$(yaml2json 'build.yaml' | jq -c .)" >> $GITHUB_ENV[0m
+2026-04-04T12:31:31.4616678Z [36;1myaml2json "build.yaml" | jq[0m
+2026-04-04T12:31:31.4675905Z shell: /usr/bin/bash -e {0}
+2026-04-04T12:31:31.4676147Z ##[endgroup]
+2026-04-04T12:31:31.6717979Z {
+2026-04-04T12:31:31.6718289Z   "include": [
+2026-04-04T12:31:31.6718587Z     {
+2026-04-04T12:31:31.6718893Z       "board": "seeeduino_xiao_ble",
+2026-04-04T12:31:31.6719348Z       "shield": "moNa2_R rgbled_adapter",
+2026-04-04T12:31:31.6719842Z       "snippet": "studio-rpc-usb-uart"
+2026-04-04T12:31:31.6720373Z     },
+2026-04-04T12:31:31.6720658Z     {
+2026-04-04T12:31:31.6720933Z       "board": "seeeduino_xiao_ble",
+2026-04-04T12:31:31.6721273Z       "shield": "moNa2_L rgbled_adapter"
+2026-04-04T12:31:31.6721508Z     },
+2026-04-04T12:31:31.6721650Z     {
+2026-04-04T12:31:31.6721852Z       "board": "seeeduino_xiao_ble",
+2026-04-04T12:31:31.6722103Z       "shield": "settings_reset"
+2026-04-04T12:31:31.6722312Z     }
+2026-04-04T12:31:31.6722451Z   ]
+2026-04-04T12:31:31.6722692Z }
+2026-04-04T12:31:31.6818236Z Post job cleanup.
+2026-04-04T12:31:31.7750274Z [command]/usr/bin/git version
+2026-04-04T12:31:31.7785805Z git version 2.53.0
+2026-04-04T12:31:31.7827891Z Temporarily overriding HOME='/home/runner/work/_temp/3ee323f2-0025-416b-b70c-0fe2eb7f90f1' before making global git config changes
+2026-04-04T12:31:31.7829041Z Adding repository directory to the temporary git global config as a safe directory
+2026-04-04T12:31:31.7841858Z [command]/usr/bin/git config --global --add safe.directory /home/runner/work/zmk-config-moNa2/zmk-config-moNa2
+2026-04-04T12:31:31.7875372Z [command]/usr/bin/git config --local --name-only --get-regexp core\.sshCommand
+2026-04-04T12:31:31.7907816Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'core\.sshCommand' && git config --local --unset-all 'core.sshCommand' || :"
+2026-04-04T12:31:31.8135872Z [command]/usr/bin/git config --local --name-only --get-regexp http\.https\:\/\/github\.com\/\.extraheader
+2026-04-04T12:31:31.8156191Z http.https://github.com/.extraheader
+2026-04-04T12:31:31.8167980Z [command]/usr/bin/git config --local --unset-all http.https://github.com/.extraheader
+2026-04-04T12:31:31.8198984Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'http\.https\:\/\/github\.com\/\.extraheader' && git config --local --unset-all 'http.https://github.com/.extraheader' || :"
+2026-04-04T12:31:31.8422340Z [command]/usr/bin/git config --local --name-only --get-regexp ^includeIf\.gitdir:
+2026-04-04T12:31:31.8453471Z [command]/usr/bin/git submodule foreach --recursive git config --local --show-origin --name-only --get-regexp remote.origin.url
+2026-04-04T12:31:31.8782312Z Evaluate and set job outputs
+2026-04-04T12:31:31.8789913Z Set output 'build_matrix'
+2026-04-04T12:31:31.8791657Z Cleaning up orphan processes
+2026-04-04T12:31:31.9131107Z ##[warning]Node.js 20 actions are deprecated. The following actions are running on Node.js 20 and may not work as expected: actions/checkout@v4. Actions will be forced to run with Node.js 24 by default starting June 2nd, 2026. Node.js 20 will be removed from the runner on September 16th, 2026. Please check if updated versions of these actions are available that support Node.js 24. To opt into Node.js 24 now, set the FORCE_JAVASCRIPT_ACTIONS_TO_NODE24=true environment variable on the runner or in your workflow file. Once Node.js 24 becomes the default, you can temporarily opt out by setting ACTIONS_ALLOW_USE_UNSECURE_NODE_VERSION=true. For more information see: https://github.blog/changelog/2025-09-19-deprecation-of-node-20-on-github-actions-runners/
