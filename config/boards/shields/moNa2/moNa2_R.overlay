@@ -67,6 +67,8 @@
     };
 };
 
+#if DT_NODE_HAS_STATUS(DT_NODELABEL(trackball), okay)
 &mkp_input_listener {
     input-processors = <&mouse_runtime_input_processor>;
 };
+#endif
