@@ -28,6 +28,7 @@ manifest:
     - name: zmk-west-commands
       remote: cormoran
       revision: main
+      west-commands: scripts/west-commands.yml
     - name: zmk-pmw3610-driver
       remote: sayu-hub
       revision: main
