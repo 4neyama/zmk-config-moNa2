@@ -33,7 +33,7 @@ jobs:
 
       - name: Install West Extensions and Dependencies
         run: |
-          python3 -m pip install questionary PyYAML
+          apt-get update && apt-get install -y python3-yaml
           west zephyr-export
 
       - name: Build Firmware
