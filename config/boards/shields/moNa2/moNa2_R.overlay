@@ -66,3 +66,7 @@
 
     };
 };
+
+&mkp_input_listener {
+    input-processors = <&mouse_runtime_input_processor>;
+};
