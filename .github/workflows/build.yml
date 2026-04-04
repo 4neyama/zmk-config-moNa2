@@ -37,13 +37,13 @@ jobs:
         run: west zephyr-export
 
       - name: Build Left Side
-        run: west build -s zmk/app -b seeeduino_xiao_ble --build-dir build/left -- -DSHIELD="moNa2_L rgbled_adapter" -DZMK_CONFIG="${{ github.workspace }}/config" -DCONFIG_ZMK_STUDIO=y
+        run: west build -s zmk/app -b seeeduino_xiao_ble --build-dir build/left -- -DSHIELD="moNa2_L rgbled_adapter" -DZMK_CONFIG="$(pwd)/config" -DCONFIG_ZMK_STUDIO=y
 
       - name: Build Right Side
-        run: west build -s zmk/app -b seeeduino_xiao_ble --build-dir build/right -- -DSHIELD="moNa2_R rgbled_adapter" -DZMK_CONFIG="${{ github.workspace }}/config" -DCONFIG_ZMK_STUDIO=y
+        run: west build -s zmk/app -b seeeduino_xiao_ble --build-dir build/right -- -DSHIELD="moNa2_R rgbled_adapter" -DZMK_CONFIG="$(pwd)/config" -DCONFIG_ZMK_STUDIO=y
 
       - name: Build Settings Reset
-        run: west build -s zmk/app -b seeeduino_xiao_ble --build-dir build/reset -- -DSHIELD=settings_reset -DZMK_CONFIG="${{ github.workspace }}/config"
+        run: west build -s zmk/app -b seeeduino_xiao_ble --build-dir build/reset -- -DSHIELD=settings_reset -DZMK_CONFIG="$(pwd)/config"
 
       - name: Rename and Prepare Artifacts
         run: |
