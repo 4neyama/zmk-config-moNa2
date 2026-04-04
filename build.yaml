@@ -1,10 +1,13 @@
 # Build config for MoNa2 with DYA Studio
-build:
+include:
   - board: seeeduino_xiao_ble
     shield: moNa2_L rgbled_adapter
     cmake-args: -DCONFIG_ZMK_STUDIO=y
+    artifact: moNa2_L
   - board: seeeduino_xiao_ble
     shield: moNa2_R rgbled_adapter
     cmake-args: -DCONFIG_ZMK_STUDIO=y
+    artifact: moNa2_R
   - board: seeeduino_xiao_ble
     shield: settings_reset
+    artifact: settings_reset

@@ -25,6 +25,9 @@ manifest:
     - name: zmk-module-ble-management
       remote: cormoran
       revision: main
+    - name: zmk-west-commands
+      remote: cormoran
+      revision: main
     - name: zmk-pmw3610-driver
       remote: sayu-hub
       revision: main

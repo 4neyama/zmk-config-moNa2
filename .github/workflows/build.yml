@@ -1,5 +1,4 @@
-name: Build MoNa2 Firmware
-
+name: Build
 on: [push, pull_request, workflow_dispatch]
 
 jobs:
@@ -11,7 +10,7 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4
 
-      - name: Cache west modules
+      - name: Cache West Modules
         uses: actions/cache@v4
         env:
           cache-name: cache-zephyr-modules
@@ -22,38 +21,33 @@ jobs:
             zephyr/
             bootloader/
             zmk/
-          key: ${{ runner.os }}-build-${{ env.cache-name }}-${{ hashFiles('config/west.yml') }}
+          key: Linux-build-cache-zephyr-modules-${{ hashFiles('config/west.yml') }}
           restore-keys: |
-            ${{ runner.os }}-build-${{ env.cache-name }}-
-            ${{ runner.os }}-build-
+            Linux-build-cache-zephyr-modules-
+            Linux-build-
 
-      - name: West Init
-        run: west init -l config
+      - name: Initialize West
+        run: |
+          west init -l config
+          west update
 
-      - name: West Update
-        run: west update
+      - name: Install West Extensions and Dependencies
+        run: |
+          pip install questionary PyYAML
+          west zephyr-export
 
-      - name: West Zephyr Export
-        run: west zephyr-export
-
-      - name: Build Left Side
-        run: west build -s zmk/app -b seeeduino_xiao_ble --build-dir build/left -- -DSHIELD="moNa2_L rgbled_adapter" -DZMK_CONFIG="$(pwd)/config" -DCONFIG_ZMK_STUDIO=y
-
-      - name: Build Right Side
-        run: west build -s zmk/app -b seeeduino_xiao_ble --build-dir build/right -- -DSHIELD="moNa2_R rgbled_adapter" -DZMK_CONFIG="$(pwd)/config" -DCONFIG_ZMK_STUDIO=y
-
-      - name: Build Settings Reset
-        run: west build -s zmk/app -b seeeduino_xiao_ble --build-dir build/reset -- -DSHIELD=settings_reset -DZMK_CONFIG="$(pwd)/config"
+      - name: Build Firmware
+        run: west zmk-build -d build -q
 
       - name: Rename and Prepare Artifacts
         run: |
-          mkdir artifacts
-          cp build/left/zephyr/zmk.uf2 artifacts/moNa2_L.uf2
-          cp build/right/zephyr/zmk.uf2 artifacts/moNa2_R.uf2
-          cp build/reset/zephyr/zmk.uf2 artifacts/settings_reset.uf2
+          mkdir -p artifacts
+          if [ -f build/moNa2_L/zephyr/zmk.uf2 ]; then cp build/moNa2_L/zephyr/zmk.uf2 artifacts/moNa2_L.uf2; fi
+          if [ -f build/moNa2_R/zephyr/zmk.uf2 ]; then cp build/moNa2_R/zephyr/zmk.uf2 artifacts/moNa2_R.uf2; fi
+          if [ -f build/settings_reset/zephyr/zmk.uf2 ]; then cp build/settings_reset/zephyr/zmk.uf2 artifacts/settings_reset.uf2; fi
 
-      - name: Archive artifacts
+      - name: Archive Artifacts
         uses: actions/upload-artifact@v4
         with:
-          name: MoNa2_Firmware
-          path: artifacts/*.uf2
+          name: firmware
+          path: artifacts/
